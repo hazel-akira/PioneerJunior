@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const [showModal, setShowModal] = useState(true);
 
   return (
-    <div className="bg-white min-h-[90vh] relative">
+    <div className="bg-[#13365f] min-h-[90vh] relative">
       
 
       {/* Hero Section */}
@@ -17,9 +17,9 @@ const Home: React.FC = () => {
       {/* Enquiry Modal */}
       <Modal
         show={showModal}
-        logoSrc="/images/favicon.webp"
-        title="Apply for grade 10"
-        imageSrc="/images/Modal.webp"
+        logoSrc="/images/logo.png"
+        title="Apply for grade 7,8 and 9"
+        imageSrc="/images/modal.webp"
         enquiryUrl="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
         onClose={() => setShowModal(false)}
       />

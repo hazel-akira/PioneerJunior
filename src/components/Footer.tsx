@@ -4,7 +4,7 @@ import {
   Users,
   GraduationCap,
   UserCheck,
-  BookOpen,
+ 
   Building2,
   UserPlus,
   DollarSign,
@@ -18,7 +18,7 @@ import {
 import { NavLink } from 'react-router-dom'
 
 const Footer: React.FC = () => (
-  <footer className="bg-[#e4af23] text-[#083056] font-sans shadow-lg px-10">
+  <footer className="bg-[#525357] text-white font-sans shadow-lg px-10">
     <div className="max-w-9xl mx-auto py-6">
       {/* Top Separator */}
       <div className="w-full border-t-2 border-white mt-0.5 mb-0.5 text-left" />
@@ -27,21 +27,20 @@ const Footer: React.FC = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Quick Links */}
         <div>
-          <h3 className=" text-[#083056] text-xl font-bold uppercase tracking-wide mb-2">
+          <h3 className=" text-[#b9782a] text-xl font-bold uppercase tracking-wide mb-2">
             Quick Links
             </h3>
 
           <ul className="space-y-2 text-base">
             {[
               { to: '/', icon: <Home size={14} />, label: 'Home' },
-              { to: '/who', icon: <Users size={14} />, label: 'Who We Are' },
-              { to: '/perfomance', icon: <GraduationCap size={14} />, label: 'KCPE Results' },
-              { to: '/nurture', icon: <UserCheck size={14} />, label: 'Nurture' },
-              { to: '/studylife', icon: <BookOpen size={14} />, label: 'Study Life' },
-              { to: '/talent', icon: <Building2 size={14} />, label: 'Talent' },
-              { to: '/fees', icon: <DollarSign size={14} />, label: 'Our Friendly Fees' },
-              { to: '/join', icon: <UserPlus size={14} />, label: ' How To Join Us' },
+              { to: '/think', icon: <Users size={14} />, label: 'Think' },
+              { to: '/pathways', icon: <GraduationCap size={14} />, label: 'Think Pathways' },
+              { to: '/boarding', icon: <UserCheck size={14} />, label: 'Think Boarding' },
+              { to: '/talent', icon: <Building2 size={14} />, label: ' Think Talent' }, 
+              { to: '/join', icon: <UserPlus size={14} />, label: ' Join Us' }, 
               { to: '/location', icon: <Navigation size={14} />, label: 'Location' },
+              { to: '/fees', icon: <DollarSign size={14} />, label: 'Fees' },            
               { to: '/access', icon: <Key size={14} />, label: 'Get Access' },
             ].map(item => (
               <li key={item.label}>
@@ -59,28 +58,28 @@ const Footer: React.FC = () => (
 
         {/* Contact Us */}
         <div>
-          <h3 className=" text-[#083056] text-xl font-bold uppercase tracking-wide mb-2">
+          <h3 className=" text-[#b9782a] text-xl font-bold uppercase tracking-wide mb-2">
             Contact Us 
             </h3>
             <div className="space-y-2 text-base">
              {/* Phone */}
               <div className="flex items-center space-x-2 ">
                <Phone size={14} />
-                <a href="tel:+254205038065" className=' hover:text-white'><span> 020 5038097</span></a>
+                <a href="tel:+254205038228" className=' hover:text-white'><span> 020 5038228</span></a>
               </div>
 
              {/* Email */}
                <div className="flex items-center space-x-2  ">
              <Mail size={16} />               
-                  <a href="mailto:admissions@stpaulthomasacademy.ac.ke" className='hover:text-white '>  <span> admissions@stpaulthomasacademy.ac.ke</span></a>
+                  <a href=" mailto:admissions@pioneerjunioracademy.co.ke" className='hover:text-white '>  <span>  admissions@pioneerjunioracademy.co.ke</span></a>
               </div>
 
             {/* Address */}
               <div className="flex items-start space-x-2 "> <MapPin size={24} />
                 <a href="https://maps.app.goo.gl/oUQbvDr7T3PNzCSC7 " className=' hover:text-white'>
-               <p> P.O. BOX 555-10205 MARAGUA</p>
+               <p> P.O. BOX 217-10205 MARAGUA</p>
               <p>
-                    Along Kenol-Murang'a Road,
+                    off Kenol-Murang'a Road,
                     Samar Location, Ichagaki,
                     Murang'a County
                 </p>
@@ -91,7 +90,7 @@ const Footer: React.FC = () => (
 
         {/* Our Schools Section */}
       <div>
-        <h3 className="text-[#083056] text-xl font-bold uppercase tracking-wide mb-2">
+        <h3 className="text-[#b9782a] text-xl font-bold uppercase tracking-wide mb-2">
           Our Schools
         </h3>
         <ul className="space-y-2 text-base">
@@ -99,7 +98,7 @@ const Footer: React.FC = () => (
             { to: 'https://www.pioneergroupofschools.co.ke/', label: 'Pioneer Group Of Schools' },
             { to: 'https://www.pioneergirlsschool.co.ke/', label: 'Pioneer Girls School' },
             { to: 'https://www.pioneergirlsjunioracademy.co.ke/', label: 'Pioneer Girls Junior Academy' },
-            { to: 'https://www.pioneerjunioracademy.co.ke/', label: 'Pioneer Junior Academy' },
+            { to: 'https://www.stpaulthomasacademy.co.ke/', label: 'St Paul Thomas Academy' },
             { to: 'https://pioneerschools.ac.ke/', label: 'Pioneer School' },
             { to: 'https://piu.ac.ke/', label: 'Pioneer International University' },
           ].map(school => (
@@ -119,7 +118,7 @@ const Footer: React.FC = () => (
 
        {/* Our Socials Section */}
       <div>
-        <h3 className="text-[#083056] text-xl font-bold uppercase tracking-wide mb-2">
+        <h3 className="text-[#b9782a] text-xl font-bold uppercase tracking-wide mb-2">
           Our Socials
         </h3>
         <div className="flex flex-wrap gap-4">
@@ -153,19 +152,18 @@ const Footer: React.FC = () => (
           <p>Licensed by Murang'a County</p>
         </div>
       </div>
-
     </div>
 
     {/* Bottom Bar */}
     <div className=" mt-6 pt-2">
       {/* Center just the text background */}
       <div className="flex justify-center">
-        <h2 className="px-4 py-2 bg-[#b7ccbc] fo rounded-full font-bold text-black text-2xl ">
+        <h2 className="px-4 py-2 bg-[#b9782a] fo rounded-full font-bold text-white text-2xl ">
           Vitae Abudantae | Life In Abundance
         </h2>
       </div>
       {/* Links row */}
-      <div className="flex flex-wrap items-center justify-center mt-2 text-sm text-black space-x-2 font-light">
+      <div className="flex flex-wrap items-center justify-center mt-2 text-sm text-white space-x-2 font-bold">
         <a href="/privacy" className="hover:text-white">Privacy Policy</a>
         <span>|</span>
         <a href="/disclaimer" className="hover:text-white">Disclaimer</a>

@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 w-full">
           <div className="max-w-6xl mx-auto px-4 md:px-8 py-24 md:py-32 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wide uppercase text-white drop-shadow">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold tracking-wide uppercase text-white drop-shadow">
               THINK JUNIOR SECONDARY, THINK PIONEER
             </h1>
 
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
 
             <div className="mt-10 flex items-center justify-center gap-4">
               <a
-                href="https://enquireto.pioneergroupofschools.co.ke"
+                href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
                 className="inline-block rounded-lg bg-white/95 text-[#062747] font-bold px-6 py-3 hover:bg-white transition"
               >
                 Make An Enquiry

@@ -27,18 +27,18 @@ const Modal: React.FC<ModalProps> = ({
       onClick={onClose}
     >
       <div
-        className=" rounded-xl shadow-2xl bg-[#74d1f6] opacity-80 w-3/4 max-w-xl overflow-hidden"
+        className=" rounded-xl shadow-2xl bg-white opacity-100 w-3/4 max-w-xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="px-6 py-6 border-b  border-gray-200">
+        <div className="px-6 py-6 border-b-2  border-gray-300">
           <div className="flex items-center gap-4">
             <img
               src={logoSrc}
               alt="Logo"
               className="h-12 w-auto object-contain"
             />
-            <h3 className="text-2xl text-white font-semibold">{title}</h3>
+            <h3 className="text-2xl text-black font-semibold">{title}</h3>
           </div>
         </div>
 
@@ -52,16 +52,16 @@ const Modal: React.FC<ModalProps> = ({
         </div>
 
         {/* Footer Buttons */}
-        <div className="flex justify-end gap-4  bg-[#74d1f6]  px-6 py-4  border-t border-gray-200">
+        <div className="flex justify-end gap-4  bg-white  px-6 py-4  border-t-2 border-gray-200">
           <button
             onClick={onClose}
-            className="px-5 py-2 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded"
+            className="px-5 py-2 bg-gray-900 hover:bg-gray-400 text-gray-300 rounded"
           >
             Close
           </button>
           <a
             href={enquiryUrl}
-            className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded"
+            className="px-5 py-2 bg-[#74d1f6] hover:bg-[#df8811] text-white rounded"
           >
           Apply Now
           </a>

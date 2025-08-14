@@ -1,7 +1,7 @@
 import React, { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
 
 /**
  * PJA — Navbar styled to match screenshot
@@ -237,22 +237,17 @@ const Navbar: React.FC = () => {
             <LinkItem key={it.label} item={it} onClick={closeAll} />
           ))}
         </DropdownMenu>
-        <Divider />
+        <Divider/>
       </div>
     )
   }
 
   return (
-    <header className="sticky top-0 z-50 font-sans" style={{ fontFamily: "Poppins, sans-serif" }}>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </Helmet>
+    <header className="sticky top-0 z-50 shadow-lg font-sans">
+     
 
       {/* Bar */}
-      <div className="bg-[#0f1b2b] text-white backdrop-blur supports-[backdrop-filter]:backdrop-blur border-b border-white/10">
+      <div className="bg-[#0f1b2b] text-white backdrop-blur py-6 supports-[backdrop-filter]:backdrop-blur border-b border-white/10">
         <div ref={navRef} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="h-14 flex items-center justify-between gap-4">
             {/* Brand */}
@@ -263,20 +258,15 @@ const Navbar: React.FC = () => {
               Pioneer Junior Academy
             </NavLink>
 
-            {/* Desktop nav */}
-            <nav aria-label="Primary" className="hidden lg:flex items-center text-[15px] font-semibold">
-              {/* Home first */}
-              <div className="flex items-center">
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    `px-3 py-2 rounded-md hover:text-[#E4AF23] transition ${isActive ? "underline" : ""}`
-                  }
-                >
-                  Home
-                </NavLink>
-                <Divider />
-              </div>
+             {/* Desktop Nav */}
+        <nav className="hidden lg:flex items-center text-sm font-bold whitespace-nowrap">
+          {/* Home */}
+          <div className="flex items-center border-l border-white px-2 first:border-l-0">
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'underline' : 'hover:underline')}>
+              Home
+            </NavLink>
+            <Divider/>
+          </div>
 
               {/* Order: Think → Pathways → Boarding → Talent → Join Us → Fees */}
               {ORDER.filter(k => k !== "getAccess").map((k) => (
@@ -305,7 +295,7 @@ const Navbar: React.FC = () => {
               onClick={() => setMobileOpen((o) => !o)}
               aria-label="Toggle menu"
               aria-expanded={mobileOpen}
-              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 bg-[#E4AF23] text-white hover:bg-white hover:text-[#0f1b2b] transition"
+              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 bg-[#74d1f6] text-white hover:bg-white hover:text-[#0f1b2b] transition"
             >
               {mobileOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
             </button>
@@ -315,7 +305,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile panel */}
       <div
-        className={`lg:hidden overflow-hidden border-b border-white/10 bg-[#0f1b2b] text-white transition-[max-height,opacity] duration-300 ${
+        className={`lg:hidden overflow-hidden border-b border-white/90 bg-[#0f1b2b] text-white transition-[max-height,opacity] duration-300 ${
           mobileOpen ? "opacity-100 max-h-[80vh]" : "opacity-0 max-h-0"
         }`}
       >
