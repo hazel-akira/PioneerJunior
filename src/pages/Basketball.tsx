@@ -1,5 +1,5 @@
 
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const  BasketballLife: React.FC = () => (
 <>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { GraduationCap, CreditCard, AlertCircle, Mail, CheckCircle, XCircle, Phone } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 interface TermFeeCardProps {
   term: string;
   amount: string;
@@ -16,7 +16,7 @@ interface OneOffChargeProps {
 const TermFeeCard: React.FC<TermFeeCardProps> = ({ term, amount, isAnnual = false }) => (
   <div className={`rounded-xl p-6 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1 ${
     isAnnual
-      ? 'bg-[#df8811] text-white'
+      ? 'bg-[#f4a024] text-white'
       : 'bg-gray-100 border border-gray-200'
   }`}>
     <div className="flex items-center justify-between mb-4">
@@ -41,7 +41,7 @@ const OneOffChargeCard: React.FC<OneOffChargeProps> = ({ title, amount, isFree =
         <div className="flex items-center">
           {isFree ? (
             <>
-              <CheckCircle className="w-5 h-5 text-[#df8811] mr-2" />
+              <CheckCircle className="w-5 h-5 text-yellow-500 mr-2" />
               <span className="text-[#f4a024] font-semibold">FREE</span>
             </>
           ) : (
@@ -59,14 +59,14 @@ const OneOffChargeCard: React.FC<OneOffChargeProps> = ({ title, amount, isFree =
 const PaymentMethodCard: React.FC<{ method: string; accepted: boolean }> = ({ method, accepted }) => (
   <div className={`rounded-lg p-4 border-2 ${
     accepted
-      ? 'border-[#df8811] bg-orange-50'
+      ? 'border-yellow-500 bg-orange-50'
       : 'border-slate-200 bg-slate-50'
   }`}>
     <div className="flex items-center">
       {accepted ? (
-        <CheckCircle className="w-5 h-5 text-[#df8811] mr-3" />
+        <CheckCircle className="w-5 h-5 text-yellow-500 mr-3" />
       ) : (
-        <XCircle className="w-5 h-5 text-[#f4a024] mr-3" />
+        <XCircle className="w-5 h-5 text-orange-500 mr-3" />
       )}
       <span className={`font-medium ${
         accepted ? 'text-slate-800' : 'text-orange-800'
@@ -77,17 +77,17 @@ const PaymentMethodCard: React.FC<{ method: string; accepted: boolean }> = ({ me
   </div>
 );
  
-export default function Grade4Fees() {
+export default function Grade8Fees() {
   const termFees = [
-    { term: "TERM 1", amount: "KES 64,200" },
-    { term: "TERM 2", amount: "KES 64,200" },
-    { term: "TERM 3", amount: "KES 64,200" }
+    { term: "TERM 1", amount: "KES 85,200" },
+    { term: "TERM 2", amount: "KES 85,200" },
+    { term: "TERM 3", amount: "KES 85,200" }
   ];
  
   const oneOffCharges = [
     { title: "Non-refundable Commitment Fee", amount: "KES 20,000" },
-    { title: "Extra charge for uniform, bedding and textbooks", amount: "KES 30,000" },
-    { title: "Free transport to and from Nanyuki, Mombasa, and Embu", isFree: true }
+    { title: "Extra charge for uniform, bedding and textbooks", amount: "KES 100,000" },
+    { title: "Free transport to and from Nyanyuki, Mombasa, and Embu", isFree: true }
   ];
  
   const paymentMethods = [
@@ -101,7 +101,7 @@ export default function Grade4Fees() {
   return (
     <>
     <Helmet>
-      <title> Grade 4 Fees | Pioneer School</title>
+      <title>  Grade 5 FEES | Pioneer School</title>
     </Helmet>
     <section className="min-h-screen bg-slate-100">
       {/* Hero Section */}
@@ -109,10 +109,10 @@ export default function Grade4Fees() {
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#df8811]">
-              Grade 4 FEES
+              Grade 8 FEES
             </h1>
             <p className="text-xl md:text-2xl font-light text-white">
-            At St Paul Thomas Academy, THERE ARE NO HIDDEN FEES AND CHARGES
+            AT PIONEER JUNIOR ACADEMY, THERE ARE NO HIDDEN COSTS OR CHARGES 
             </p>
           </div>
         </div>
@@ -135,14 +135,14 @@ export default function Grade4Fees() {
             ))}
             <TermFeeCard
               term="ANNUAL TOTAL"
-              amount="KES 192,000"
+              amount="KES 255,600"
               isAnnual={true}
             />
           </div>
         </div>
  
-        {/* One-off Charges Section */}
-        <div className="mb-12">
+       {/* One-off Charges Section */}
+       <div className="mb-12">
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-[#083056] mb-2 text-center">
               New Students Only
@@ -200,7 +200,7 @@ export default function Grade4Fees() {
       <li className="flex items-start">
         <AlertCircle className="w-6 h-6 text-[#df8811] mr-3 mt-1 flex-shrink-0" />
         <p className="text-white text-lg">
-          All fees should be paid to <strong className="text-slate-400">St Paul Thomas Academy accounts only</strong>
+          All fees should be paid to <strong className="text-slate-400">PIONEER INTERNATIONAL JUNIOR SCHOOL LIMITED ACCOUNTS ONLY</strong>
         </p>
       </li>
       <li className="flex items-start">
@@ -222,7 +222,7 @@ export default function Grade4Fees() {
       </p>
       <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
         <a
-          href="mailto:finance.enquiries@pioneerschools.co.ke"
+          href="mailto:finance.enquiries@pioneerjunioracademy.co.ke"
           className="inline-flex items-center px-4 py-2 bg-[#df8811] text-[#083056] rounded-lg font-semibold hover:bg-white transition-colors"
         >
           <Mail className="w-4 h-4 mr-1" /> Send Email

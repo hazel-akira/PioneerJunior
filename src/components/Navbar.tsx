@@ -1,7 +1,7 @@
 import React, { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-//import { Helmet } from "react-helmet-async";
+//import { Helmet } from "@dr.pogodin/react-helmet";
 
 /**
  * PJA — Navbar styled to match screenshot
@@ -243,19 +243,20 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <header className="sticky top-0 z-50 shadow-lg font-sans">
+    <header className="sticky top-0 z-50 shadow-lg font-sansita">
      
 
       {/* Bar */}
       <div className="bg-[#0f1b2b] text-white backdrop-blur py-6 supports-[backdrop-filter]:backdrop-blur border-b border-white/10">
         <div ref={navRef} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="h-14 flex items-center justify-between gap-4">
+          <div className="h-8 flex items-center justify-between gap-4">
             {/* Brand */}
             <NavLink
               to="/"
-              className="shrink-0 text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold tracking-wide text-white hover:text-[#E4AF23] transition-colors"
+              className="shrink-0 text-base sm:text-lg md:text-xl lg:text-2xl ml-1 font-extrabold tracking-wide text-white hover:text-[#E4AF23] transition-colors"
             >
-              Pioneer Junior Academy
+              <div className="title">Pioneer Junior Academy</div>
+             
             </NavLink>
 
              {/* Desktop Nav */}
@@ -295,7 +296,7 @@ const Navbar: React.FC = () => {
               onClick={() => setMobileOpen((o) => !o)}
               aria-label="Toggle menu"
               aria-expanded={mobileOpen}
-              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 bg-[#74d1f6] text-white hover:bg-white hover:text-[#0f1b2b] transition"
+              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 bg-[#74d1f6] text-white hover:bg-[#b9782a] hover:text-white transition"
             >
               {mobileOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
             </button>

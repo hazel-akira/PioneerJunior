@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const StudyLife: React.FC = () => (
   <div className="min-h-screen font-sans bg-[#083056]">

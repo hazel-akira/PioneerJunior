@@ -1,6 +1,6 @@
 // src/pages/Seafarers.tsx
 
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const Seafarers: React.FC = () => {
   return (

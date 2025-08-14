@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const Location: React.FC = () => (
   <>
@@ -9,12 +9,12 @@ const Location: React.FC = () => (
     </Helmet>
 
     {/* Header Section */}
-    <section className="bg-[#13365e] text-[#bfd5ee] py-16">
+    <section className="bg-[#161e2e] text-[#df8811] py-16">
       <div className="container mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-bold">
-          We look forward to welcoming you to St Paul Thomas Academy
+          We look forward to welcoming you to Pioneer Junior Academy
         </h1>
-        <div className="mt-4 h-1 w-24 bg-[#bfd5ee] mx-auto"></div>
+        <div className="mt-4 h-1 w-24 bg-[white] mx-auto"></div>
       </div>
     </section>
 
@@ -30,24 +30,24 @@ const Location: React.FC = () => (
     </section>
 
     {/* Contact Section with dimmed background */}
-    <section className="relative mx-auto px-4 flex items-center justify-center h-[50vh] text-center">
+    <section className="relative mx-auto px-4 flex items-center justify-center h-[70vh] text-center">
       {/* Background image layer */}
       <div
-        className="absolute inset-0 bg-[url('/images/contactUs.webp')] bg-cover bg-center filter brightness-50"
+        className="absolute inset-0 bg-[url('/images/Map.jpg')] bg-cover bg-center filter brightness-70 "
       />
 
       {/* Content layer */}
       <div className="relative z-10 text-white max-w-2xl space-y-6">
         <h2 className="text-4xl font-bold">Contact Us</h2>
         <p className="text-lg">
-          <span className="font-semibold">Phone:</span> +254 20 5038097
+          <a href="tel:+254205038228" className='hover:text-black'><span className=" text-black font-bold">Phone:</span> tel:+254205038228</a>
         </p>
         <p className="text-lg">
-          <span className="font-semibold">Email:</span> admissions@stpaulthomasacademy.co.ke
+          <a href="mailto:admissions@pioneerjunioracademy.co.ke" className='hover:text-black' ><span className="text-black font-bold">Email:</span>  admissions@pioneerjunioracademy.co.ke</a>          
         </p>
         <p className="text-lg">
-          <span className="font-semibold">Postal Address:</span><br />
-          P.O. Box 555-10205<br />
+          <span className="font-bold">Postal Address:</span><br />
+          P.O. Box 217-10205<br />
           off Kenol-Murang'a Road,<br />
           Ichagaki, Murang'a County, Kenya
         </p>

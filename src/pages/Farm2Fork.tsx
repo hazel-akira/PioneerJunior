@@ -1,5 +1,5 @@
 // src/pages/Farm2Fork.tsx
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 
 interface SectionCardProps {

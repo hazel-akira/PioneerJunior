@@ -1,6 +1,6 @@
 // src/pages/SwimmersLife.tsx
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const SwimmersLife: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { GraduationCap, CreditCard,Phone, AlertCircle, Mail, CheckCircle, XCircle } from 'lucide-react';
  
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 interface TermFeeCardProps {
   term: string;
   amount: string;
@@ -201,7 +201,7 @@ export default function grade6Fees() {
       <li className="flex items-start">
         <AlertCircle className="w-6 h-6 text-[#df8811] mr-3 mt-1 flex-shrink-0" />
         <p className="text-white text-lg">
-          All fees should be paid to <strong className="text-slate-400">St Paul Thomas Academy accounts only</strong>
+          All fees should be paid to <strong className="text-slate-400">PIONEER INTERNATIONAL JUNIOR SCHOOL LIMITED ACCOUNTS ONLY</strong>
         </p>
       </li>
       <li className="flex items-start">
@@ -223,7 +223,7 @@ export default function grade6Fees() {
       </p>
       <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
         <a
-          href="mailto:finance.enquiries@pioneerschools.co.ke"
+          href="mailto:finance.enquiries@pioneerjunioracademy.co.ke"
           className="inline-flex items-center px-4 py-2 bg-[#df8811] text-[#083056] rounded-lg font-semibold hover:bg-white transition-colors"
         >
           <Mail className="w-4 h-4 mr-1" /> Send Email

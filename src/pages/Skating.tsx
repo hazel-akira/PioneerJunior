@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const SkatingLife: React.FC = () => (
   <div className="min-h-screen bg-[#083056]">

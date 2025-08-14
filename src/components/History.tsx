@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from '@dr.pogodin/react-helmet'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { Pagination, Navigation } from 'swiper/modules';

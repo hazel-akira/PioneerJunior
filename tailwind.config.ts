@@ -1,54 +1,40 @@
 // tailwind.config.ts
+
 import type { Config } from "tailwindcss"
+
 
 export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        // Sansita for brand, headings, nav
+        sansita: ["Sansita", "system-ui"],
+        // Helvetica for paragraphs
+        helvetica: ["Helvetica Neue", "Helvetica", "Arial", "system-ui"],
+      },
+      fontSize: {
+        // Named scale per spec
+        title: ["30px", { lineHeight: "1.15", letterSpacing: "0.01em" }],
+        h1: ["24px", { lineHeight: "1.2" }],
+        h2: ["20px", { lineHeight: "1.25" }],
+        h3: ["18px", { lineHeight: "1.3" }],
+        sub1: ["16px", { lineHeight: "1.4" }],
+        sub2: ["14px", { lineHeight: "1.45" }],
+        p: ["24px", { lineHeight: "1.55" }],
+        nav: ["18px", { lineHeight: "1.25", letterSpacing: "0.01em" }],
+        btn: ["14px", { lineHeight: "1.1", letterSpacing: "0.01em" }],
+      },
+      // Optional: brand colors for buttons (tweak if needed)
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        pjaBlue: "#0f1b2b",     // deep navy (bar)
+        pjaBrand: "#74d1f6",    // light brand blue
+        pjaBlueSolid: "#0C356A",// button blue
+        pjaOrange: "#E4AF23",   // hover orange
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": { from: { height: "0" }, to: { height: "var(--radix-accordion-content-height)" } },
-        "accordion-up": { from: { height: "var(--radix-accordion-content-height)" }, to: { height: "0" } },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        btn: "2px",             // per spec (Rad 2)
       },
     },
   },

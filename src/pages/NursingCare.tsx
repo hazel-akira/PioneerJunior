@@ -1,5 +1,5 @@
 // src/pages/NursingCare.tsx
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 import InfoCard from '../components/InfoCard';
 

@@ -39,20 +39,15 @@ const accessItems = [
 ]
 
 const StudentAccess: React.FC = () => (
-  <div className="flex flex-col min-h-screen bg-[#083056]">
+  <div className="flex flex-col min-h-screen bg-[#161e2e]">
     {/* Hero */}
     <section
       className="relative h-[60vh]  flex flex-col items-center justify-center text-white bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/studentAccess.webp')" }}
+      style={{ backgroundImage: "url('/images/stu_Access.jpg')" }}
     >
       {/* dark overlay */}
       <div className="absolute inset-0 bg-[#093056]/30" />
-      <div className="relative z-10 text-center px-4">
-        <h1 className="text-3xl md:text-5xl font-bold">Student Access</h1>
-        <p className="mt-2 text-lg max-w-xl">
-          Quick links to all the platforms our students need to stay connected.
-        </p>
-      </div>
+      
     </section>
 
     {/* Access Cards */}
@@ -64,7 +59,7 @@ const StudentAccess: React.FC = () => (
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#e4af23] rounded-lg shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center"
+            className="bg-[#74d1f6] rounded-3xl hover:bg-[#e4af23] shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center"
           >
             <Icon className="w-12 h-12 text-[#093056] mb-4" />
             <h2 className="text-xl font-semibold mb-2">{title}</h2>

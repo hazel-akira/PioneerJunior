@@ -1,20 +1,20 @@
 // src/pages/JoinGrade4.tsx
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 const JoinGrade4: React.FC = () => {
   return (
 
     <> 
      <Helmet>
-    <title> Join Grade 4 | St Paul Thomas Academy </title>
+    <title> Join Grade 7 | Pioneer Junior Academy </title>
     </Helmet>
-  <div className="min-h-screen flex flex-col bg-[#083056]">
+  <div className="min-h-screen flex flex-col bg-[#161e2e]">
     
     {/* Hero */}
     <section
       className="relative h-[60vh] bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/grade4.webp')" }}
+      style={{ backgroundImage: "url('/images/join7.jpg')" }}
     >
-      <div className="absolute inset-0 bg-[#74d1f6]/20" />
+      <div className="absolute inset-0 bg-[#161e2e]/30" />
       
     </section>
 
@@ -24,7 +24,7 @@ const JoinGrade4: React.FC = () => {
       {/* Eligibility */}
       <section>
         <h2 className="text-3xl font-bold text-white mb-4">
-          Eligibility Requirements for Joining Grade 4
+          Eligibility Requirements for Joining Grade 7
         </h2>  
         <div className="mx-auto h-4 bg-white w-full"></div>    
       </section>
@@ -37,7 +37,7 @@ const JoinGrade4: React.FC = () => {
           The student requires to attain a minimum score of achieved expected expectation.
           </li>
           <li>
-          The student must provide an original CBC result certificate for Grade 3. (Please first supply us with the original; a copy of the original will be kept by the school) 
+          The student must provide an original KPSEA CBC result certificate for Grade 6 . (Please first supply us with the original; a copy of the original will be kept by the school) 
           </li>
           <li>
           The student must have a Nemis/Assessment Number or Foreign students must have a unique identification number from the ministry of education of the country of origin. 
@@ -68,7 +68,7 @@ const JoinGrade4: React.FC = () => {
   <h1 className='font-bold uppercase text-2xl'>
     How To Apply</h1>
 
-  <p className='my-4  text-xl'>The student can apply to Join St Paul Thomas Academy by either applying online, download the application form and submit to our offices or visiting our offices and fill out the applications forms  </p>
+  <p className='my-4  text-xl'>The student can apply to Join Pioneer Junior Academy by either Applying online, download the application form and submit to our offices or Visiting our offices and fill out the applications forms</p>
   <h1 className='font-bold uppercase text-2xl'>
 
     {/* Calls to Action */}
@@ -85,8 +85,7 @@ const JoinGrade4: React.FC = () => {
   </section>
   <div className="mx-auto h-4 my-4 bg-white w-full"></div>  
   WHAT HAPPENS NEXT ?</h1>
-  <p className='my-4  text-xl'>The student can apply to Join St Paul Thomas Academy by either applying online, download the application form and submit to our offices or visiting our offices and fill out the applications forms  </p>
-  <ul className="list-decimal list-inside space-y-2 text-xl  text-gray-100">
+   <ul className="list-decimal list-inside space-y-2 text-xl  text-gray-100">
           <li className='font-bold'>
           Review of Applications forms
           </li>
@@ -122,12 +121,12 @@ const JoinGrade4: React.FC = () => {
  <section className="flex flex-col sm:flex-row gap-4 justify-center">
     
     <a
-      href="/grade5"
+      href="/grade8"
       target="_blank"
       rel="noopener"
       className="inline-block border mb-6 border-[#bdd6f0] bg-[#e4af23]  px-8 py-3 text-2xl font-bold uppercase text-white hover:bg-[#bdd6f0] hover:text-[#0C356A] transition-colors rounded"
             >
-      Join grade 5
+      Join grade 8
     </a>
   </section>
 

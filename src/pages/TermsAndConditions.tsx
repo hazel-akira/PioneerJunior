@@ -1,12 +1,12 @@
 // src/pages/TermsAndConditions.tsx
 import React from 'react'
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const TermsAndConditions: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Terms and Conditions | St Paul Thomas Academy</title>
+        <title>Terms and Conditions | PIONEER  JUNIOR ACADEMY</title>
       </Helmet>
       <div
         className="bg-[#083056]/20 min-h-screen text-[#083056] py-16 px-4"
@@ -32,7 +32,7 @@ const TermsAndConditions: React.FC = () => {
                 full before classes begin.
               </li>
               <li>
-                All fees should be paid directly into St Paul Thomas Academy accounts only.
+                All fees should be paid directly into PIONEER INTERNATIONAL JUNIOR SCHOOL LIMITED ACCOUNTS ONLY.
               </li>
               <li>
                 Money paid is <strong>not refundable</strong> or transferable to
@@ -57,10 +57,10 @@ const TermsAndConditions: React.FC = () => {
           <p>
             For clarification, please email us at{' '}
             <a
-              href="mailto:finance.enquiries@stpaulthomasacademy.co.ke"
+              href="mailto:finance.enquiries@pioneerjunioracademy.co.ke"
               className="underline text-[#df8811]"
             >
-              finance.enquiries@stpaulthomasacademy.co.ke
+              finance.enquiries@pioneerjunioracademy.co.ke
             </a>
             .
           </p>

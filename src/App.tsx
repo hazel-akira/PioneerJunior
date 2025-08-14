@@ -23,8 +23,9 @@ import NursingCare from './pages/NursingCare'
 import Chaplaincy from './pages/Chaplaincy'
 import JoinUs from './pages/JoinUs'
 import Form3 from './components/Form3'
-import Grade4 from './components/grade4'
-import Grade5 from './components/Grade5'
+
+import Grade7 from './components/grade7'
+import Grade8 from './components/grade8'
 import Fees from './components/Fees'
 //import FeeInfo from './components/grade4Fees'
 import LocationPage from './components/LocationPage'
@@ -38,13 +39,13 @@ import Disclaimer from './pages/Disclaimer';
 import PerformancePage from './pages/perfomance'
 import NotFound from './pages/NotFound'
 import { Floating } from './components/Floating'
-import Grade4Fees from './components/grade4Fees'
-import Grade5Fees from './components/Grade5Fees'
-import Grade6Fees from './components/grade6fees'
+import Grade7Fees from './components/grade7Fees'
+import Grade8Fees from './components/Grade8Fees'
+import Grade9Fees from './components/grade9fees'
 import TermsAndConditions from './pages/TermsAndConditions'
 import Sitemap from './components/Sitemap'
 import WhoWeAre from './pages/WhoWeAre'
-import JoinGrade6 from './components/grade6'
+import JoinGrade9 from './components/Grade9'
 import AdmissionsPolicy from './components/AdmissionPolicy'
 import YoungAirCadet from './pages/YoungAirCadet'
 import CodingLife from './pages/Coding'
@@ -123,15 +124,15 @@ export default function App() {
         <Route path='join' element={<JoinUs />} />
         <Route path='adm' element={<AdmissionsPolicy />} />
         <Route path='form3' element={<Form3 />} />
-        <Route path='grade4' element={<Grade4 />} />
-        <Route path='grade5' element={<Grade5 />} />
-        <Route path='grade6' element={<JoinGrade6 />} />
+        <Route path='grade7' element={<Grade7 />} />
+        <Route path='grade8' element={<Grade8 />} />
+        <Route path='grade9' element={<JoinGrade9 />} />
 
         {/* utilities */}
         <Route path='fees' element={<Fees />} />
-        <Route path='grade4fee' element={<Grade4Fees/>}/>
-        <Route path='grade5fee' element={<Grade5Fees />} />
-        <Route path='grade6fee' element={<Grade6Fees />} />
+        <Route path='grade7fee' element={<Grade7Fees/>}/>
+        <Route path='grade8fee' element={<Grade8Fees />} />
+        <Route path='grade9fee' element={<Grade9Fees />} />
         <Route path='terms' element={<TermsAndConditions />} />
 
         {/* access */}

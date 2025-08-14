@@ -46,7 +46,7 @@ const Footer: React.FC = () => (
               <li key={item.label}>
                 <NavLink
                  to={item.to} 
-                 className="flex items-center space-x-1 hover:text-white"
+                 className="flex items-center space-x-1 hover:text-[#df8811]"
                  >
                   {item.icon}
                   <span>{item.label}</span>
@@ -65,18 +65,18 @@ const Footer: React.FC = () => (
              {/* Phone */}
               <div className="flex items-center space-x-2 ">
                <Phone size={14} />
-                <a href="tel:+254205038228" className=' hover:text-white'><span> 020 5038228</span></a>
+                <a href="tel:+254205038228" className=' hover:text-[#df8811]'><span> 020 5038228</span></a>
               </div>
 
              {/* Email */}
                <div className="flex items-center space-x-2  ">
              <Mail size={16} />               
-                  <a href=" mailto:admissions@pioneerjunioracademy.co.ke" className='hover:text-white '>  <span>  admissions@pioneerjunioracademy.co.ke</span></a>
+                  <a href=" mailto:admissions@pioneerjunioracademy.co.ke" className='hover:text-[#df8811] '>  <span>  admissions@pioneerjunioracademy.co.ke</span></a>
               </div>
 
             {/* Address */}
               <div className="flex items-start space-x-2 "> <MapPin size={24} />
-                <a href="https://maps.app.goo.gl/oUQbvDr7T3PNzCSC7 " className=' hover:text-white'>
+                <a href="https://maps.app.goo.gl/oUQbvDr7T3PNzCSC7 " className=' hover:text-[#df8811]'>
                <p> P.O. BOX 217-10205 MARAGUA</p>
               <p>
                     off Kenol-Murang'a Road,
@@ -107,7 +107,7 @@ const Footer: React.FC = () => (
                 href={school.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#df8811] transition-colors"
               >
                 {school.label}
               </a>
@@ -164,11 +164,11 @@ const Footer: React.FC = () => (
       </div>
       {/* Links row */}
       <div className="flex flex-wrap items-center justify-center mt-2 text-sm text-white space-x-2 font-bold">
-        <a href="/privacy" className="hover:text-white">Privacy Policy</a>
+        <a href="/privacy" className="hover:text-[#df8811]">Privacy Policy</a>
         <span>|</span>
-        <a href="/disclaimer" className="hover:text-white">Disclaimer</a>
+        <a href="/disclaimer" className="hover:text-[#df8811]">Disclaimer</a>
         <span>|</span>
-        <a href="/sitemap" className="hover:text-white">Sitemap</a>
+        <a href="/sitemap" className="hover:text-[#df8811]">Sitemap</a>
         <span>|</span>
         <span>Copyright © 2025. All rights reserved.</span>
       </div>

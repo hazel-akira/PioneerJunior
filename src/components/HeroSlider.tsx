@@ -1,7 +1,7 @@
 // src/components/Hero.tsx
 import { Link } from "react-router-dom";
 import heroImage from "/images/pja-band.png";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Hero: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
               THINK JUNIOR SECONDARY, THINK PIONEER
             </h1>
 
-            <p className="mt-6 text-base md:text-lg text-white/90 max-w-3xl mx-auto">
+            <p className="mt-6 text-base md:text-lg font-helvetica text-white/90 max-w-3xl mx-auto">
               We provide a nurturing, future-ready learning environment, grounded
               in excellence and character for every learner.
             </p>

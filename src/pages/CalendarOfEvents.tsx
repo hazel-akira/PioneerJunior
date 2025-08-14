@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, Clock, GraduationCap, AlertCircle } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+
 interface TermData {
   name: string;
   opening: string;
@@ -63,27 +63,25 @@ const CalendarOfEvents: React.FC = () => {
   
  
   return (
-    <>  <Helmet>
-    <title> Calendar Of Events | Pioneer School</title>
-  </Helmet>
+   
     <div className="bg-slate-200 font-sans min-h-screen">
       <div className="container mx-auto p-4 md:p-6">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Calendar className="w-10 h-10 text-[#083056]" />
+            <Calendar className="w-10 h-10 text-[#161e2e]" />
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900">
               Calendar of Events
             </h1>
           </div>
-          <div className="w-24 h-1 bg-blue-900 mx-auto rounded-full"></div>
+          <div className="w-24 h-2 bg-[#74d1f6] mx-auto rounded-full"></div>
         </div>
  
         {/* Terms Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
           {termsData.map((term, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-200 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-              <div className="bg-[#083056] px-6 py-4">
+              <div className="bg-[#161e2e] px-6 py-4">
                 <h2 className="text-xl md:text-2xl font-bold text-white flex items-center gap-2">
                   <GraduationCap className="w-6 h-6" />
                   {term.name} - 2025
@@ -94,8 +92,8 @@ const CalendarOfEvents: React.FC = () => {
                 {/* Main Term Dates */}
                 <div className="grid sm:grid-cols-2 gap-4 mb-6">
                   <div className="bg-orange-50 p-4 rounded-lg border border-yellow-200">
-                    <h3 className="font-semibold text-yellow-800 mb-2 flex items-center gap-2">
-                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <h3 className="font-semibold text-red-800 mb-2 flex items-center gap-2">
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                       Opening Date
                     </h3>
                     <p className="text-yellow-700 font-medium">{term.opening}</p>
@@ -117,11 +115,11 @@ const CalendarOfEvents: React.FC = () => {
                       Half Term Break
                     </h3>
                     <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="bg-blue-50 p-3 rounded border border-blue-200">
-                        <span className="text-[#083056] font-medium">From: {term.halfTerm.opening}</span>
+                      <div className="bg-blue-100 p-3 rounded border border-[#74d1f6]">
+                        <span className="text-[#161e2e] font-medium">From: {term.halfTerm.opening}</span>
                       </div>
-                      <div className="bg-blue-50 p-3 rounded border border-blue-200">
-                        <span className="text-[#083056] font-medium">To: {term.halfTerm.closing}</span>
+                      <div className="bg-blue-100 p-3 rounded border border-[#74d1f6]">
+                        <span className="text-[#161e2e] font-medium">To: {term.halfTerm.closing}</span>
                       </div>
                     </div>
                   </div>
@@ -152,7 +150,7 @@ const CalendarOfEvents: React.FC = () => {
         
  
           {/* Footer Notice */}
-          <div className="bg-[#083056]  rounded-xl p-6 text-white flex items-center">
+          <div className="bg-[#161e2e]  rounded-xl p-6 text-white flex items-center">
             <div className="flex items-start gap-4">
               <AlertCircle className="w-8 h-8 mt-1 flex-shrink-0 text-center text-[#df8811]" />
               <div>
@@ -169,7 +167,7 @@ const CalendarOfEvents: React.FC = () => {
         </div>
       </div>
     
-    </>
+  
   );
 };
  

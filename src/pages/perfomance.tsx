@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { BarChart3, TrendingUp, Award, Calendar, ExternalLink, Loader2 } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@dr.pogodin/react-helmet';
 import { Link } from 'react-router-dom'
 interface DashboardData {
   id: string;
