@@ -1,0 +1,19 @@
+this._qs=this._qs||{};(function(_){var window=this;
+try{
+_.pqg=_.w("CHCSlb",[]);_.Oc(_.pqg);
+}catch(e){_._DumpException(e)}
+try{
+_.DZd=_.w("mzzZzc",[]);_.Oc(_.DZd);
+}catch(e){_._DumpException(e)}
+try{
+_.vqg=_.w("fmklff",[_.Yg,_.DZd,_.pqg]);
+}catch(e){_._DumpException(e)}
+try{
+_.t("TdC3Wc");
+_.a3g=class extends _.oo{static Ra(){return{service:{clipboard:_.bG,window:_.p_g}}}constructor(a){super();this.Az=a.service.clipboard;this.oa=a.service.window}copy(a,b=0){this.Az.copy(a,!1,this.oa.getDocument())?(a=_.ma(),_.ja(a,"SamsungBrowser")||(_.ja(a,"Version/0.")||_.ja(a,"Version/1.")||_.ja(a,"Version/2.")||_.ja(a,"Version/3."))&&(_.ja(a,"SAMSUNG")||_.ja(a,"SM-")||_.ja(a,"SGH-"))||this.Ei("Text copied to clipboard",b)):this.Ei("Failed to copy text",b)}Ei(a,b){const c=this;return _.y(function*(){a:switch(b){case 0:var d=
+"yuChW";break a;case 1:d="yuChW YEw87d";break a;default:d=null}d&&(yield _.Z2g(c,"snackbar",_.vqg)).oa({label:a,lE:!0,Wb:d})})}};_.Ue(_.Y2g,_.a3g);
+
+_.u();
+}catch(e){_._DumpException(e)}
+})(this._qs);
+// Google Inc.

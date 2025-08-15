@@ -101,11 +101,11 @@ export default function Grade8Fees() {
   return (
     <>
     <Helmet>
-      <title>  Grade 5 FEES | Pioneer School</title>
+      <title>  Grade 8 Fees | Pioneer Junior Academy</title>
     </Helmet>
     <section className="min-h-screen bg-slate-100">
       {/* Hero Section */}
-      <div className="bg-[#083056] text-white">
+      <div className="bg-[#161e2e] text-white">
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#df8811]">

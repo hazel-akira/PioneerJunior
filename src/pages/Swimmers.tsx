@@ -6,9 +6,9 @@ const SwimmersLife: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Swimmers Life | St Paul Thomas Academy</title>
+        <title>Swimmers Life | Pioneer Junior Academy</title>
       </Helmet>
-      <div className="min-h-screen font-sans bg-[#083056]">
+      <div className="min-h-screen font-sans bg-[#161e2e]">
 
       <section className="py-12 h-[20vh]">
         <div className="max-w-4xl mx-auto py-6 space-y-6 px-4 text-left">
@@ -21,24 +21,23 @@ const SwimmersLife: React.FC = () => {
 {/* Hero Section */}
 <section
       className="relative h-[60vh] bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/swimmers.webp')",fontFamily: 'Times New Roman, serif' }}
+      style={{ backgroundImage: "url('/images/swimming.JPG')" }}
     >
       <div className="absolute inset-0 bg-[#74d1f6]/30" />
     
     </section>
       <main className="container max-w-4xl text-center mx-auto px-4  py-12">
-        <p className="text-lg font-sans text-gray-100">
-          As part of our commitment to holistic development, we offer swimming lessons that not only teach valuable life skills but also promote physical fitness, water safety, and confidence in the water.
-        </p>
+        <p className="text-4xl  text-gray-100">
+        Experience the joy of swimming at Pioneer Junior Academy, where we offer complimentary access to our state-of-the-art facilities and expert coaches to enhance your child's swimming abilities. </p>
       </main>
       {/* Calls to Action */}
     <section className="flex flex-col mt-6 sm:flex-row gap-4 justify-center">
       <a
-    href="/skating"
+    href="/cycling"
     rel="noopener"
     className="inline-block border mb-6  border-[#bdd6f0] bg-transparent px-8 py-3 text-2xl font-bold uppercase text-white hover:bg-[#bdd6f0] hover:text-[#0C356A] transition-colors rounded"
             >
-   Skating Life
+   Cycling Life
     </a>
     </section>
 

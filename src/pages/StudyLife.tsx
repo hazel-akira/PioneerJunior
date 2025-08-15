@@ -3,7 +3,7 @@ import { Helmet } from '@dr.pogodin/react-helmet';
 const StudyLife: React.FC = () => (
   <div className="min-h-screen font-sans bg-[#083056]">
     <Helmet>
-      <title>Study Life | St Paul Thomas Academy</title>
+      <title>Study Life | Pioneer Junior Academy</title>
     </Helmet>
 
     {/* Hero Section */}

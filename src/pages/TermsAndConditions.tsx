@@ -6,7 +6,7 @@ const TermsAndConditions: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Terms and Conditions | PIONEER  JUNIOR ACADEMY</title>
+        <title>Terms and Conditions | Pioneer Junior Academy</title>
       </Helmet>
       <div
         className="bg-[#083056]/20 min-h-screen text-[#083056] py-16 px-4"

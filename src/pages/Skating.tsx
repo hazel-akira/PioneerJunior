@@ -1,9 +1,9 @@
 import { Helmet } from '@dr.pogodin/react-helmet';
 
 const SkatingLife: React.FC = () => (
-  <div className="min-h-screen bg-[#083056]">
+  <div className="min-h-screen bg-[#161e2e]">
     <Helmet>
-      <title> Skating Life | St Paul Thomas Academy</title>
+      <title> Skating Life | Pioneer Junior Academy</title>
     </Helmet>
 
     <section className="py-12 h-[20vh]">
@@ -18,26 +18,27 @@ const SkatingLife: React.FC = () => (
     {/* Hero Section */}
     <section
       className="relative h-[60vh] bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/skate.webp')",fontFamily: 'Times New Roman, serif' }}
+      style={{ backgroundImage: "url('/images/skating.JPG')"}}
     >
       <div className="absolute inset-0 bg-[#74d1f6]/10" />
     </section>
-    <section
-      className="relative h-[60vh] bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/skating1.JPG')",fontFamily: 'Times New Roman, serif' }}
-    >
-      <div className="absolute inset-0 bg-[#74d1f6]/10" />
-    
-    </section>
+
+    <div className="container max-w-4xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-4 gap-8">
+      {/* Description */}
+      <main className="lg:col-span-3 text-4xl space-y-6 text-gray-100">
+        <p>
+        The enriching and enjoyable student skating experience at Pioneer Junior Academy offers a unique opportunity for young learners to develop their skating skills while fostering teamwork and camaraderie. </p>
+      </main>
+      </div>  
     
     {/* Calls to Action */}
     <section className="flex flex-col mt-6 sm:flex-row gap-4 justify-center">
     <a
-    href="/cycling"
+    href="/golf"
     rel="noopener"
     className="inline-block border mb-6  font-sans border-[#bdd6f0] bg-transparent px-8 py-3 text-2xl font-bold uppercase text-white hover:bg-[#bdd6f0] hover:text-[#0C356A] transition-colors rounded"
             >
-     Cycling Life
+     Golf Life
     </a>
     </section> 
   </div>

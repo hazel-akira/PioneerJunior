@@ -6,7 +6,7 @@ const WhoWeAre: React.FC = () => {
   
   return (
     <>  <Helmet>
-    <title> Who we are | St Paul Thomas Academy</title>
+    <title> Who we are | Pioneer Junior Academy</title>
   </Helmet>
       
   <main

@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 const JoinUs: React.FC = () => {
   return (
+    
     <div className="min-h-screen font-sans bg-[#f9fafb]">
+      <Helmet>
+      <title> Join Us | Pioneer Junior Academy</title>
+    </Helmet>
       {/* Hero */}
       <section className="relative h-[100vh] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('/images/join.JPG')" }}>
         <div className="absolute inset-0 bg-black opacity-50" />

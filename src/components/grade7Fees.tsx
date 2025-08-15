@@ -101,7 +101,7 @@ export default function Grade7Fees() {
   return (
     <>
     <Helmet>
-      <title> Grade 7 Fees | Pioneer School</title>
+      <title> Grade 7 Fees | Pioneer Junior Academy</title>
     </Helmet>
     <section className="min-h-screen bg-slate-100">
       {/* Hero Section */}

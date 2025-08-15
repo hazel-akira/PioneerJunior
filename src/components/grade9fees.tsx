@@ -102,18 +102,18 @@ export default function grade6Fees() {
   return (
     <>
     <Helmet>
-      <title> Grade 6 Fees | Pioneer School</title>
+      <title> Grade 9 Fees | Pioneer Junior Academy</title>
     </Helmet>
     <section className="min-h-screen bg-slate-100">
       {/* Hero Section */}
-      <div className="bg-[#083056] text-white">
+      <div className="bg-[#0f1b2b] text-white">
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#df8811]">
-              Grade 6 FEES
+              Grade 9 FEES
             </h1>
-            <p className="text-xl md:text-2xl font-light text-white">
-              AT PIONEER SCHOOLS, THERE ARE NO HIDDEN FEES AND CHARGES
+            <p className="text-xl md:text-2xl font-light uppercase text-white">
+              AT PIONEER Junior Academy , THERE ARE NO HIDDEN FEES AND CHARGES
             </p>
           </div>
         </div>

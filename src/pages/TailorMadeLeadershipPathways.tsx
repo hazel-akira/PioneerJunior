@@ -1,120 +1,153 @@
 // src/pages/TailorMadeLeadershipPathways.tsx
+import React from 'react';
 import { Helmet } from '@dr.pogodin/react-helmet';
-import InfoCard from '../components/InfoCard';
+import { Link } from 'react-router-dom';
 
-<Helmet>
-      <title> PATHWAYS | St Paul Thomas Academy</title>
-    </Helmet>
+type Pathway = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  link: string;
+  /** Optional per-image focal point (CSS object-position). e.g., "50% 25%" */
+  focal?: string;
+};
 
-const cards = [
+const cards: Pathway[] = [
   {
-    title: 'English',
-    description: 'Discover how we craft personalized leadership journeys that unlock each student’s potential.',
-    imageSrc: '/images/path3.webp',
-    link: 'https://kicd.ac.ke/wp-content/uploads/2024/07/English-Grade-10-June-2024.pdf',
+    title: 'Think Detailed Pathways',
+    description: 'Detailed CBC pathways for Grades 7, 8, and 9.',
+    imageSrc: '/images/cbc.png',
+    link: '/detailed-pathways',
+    focal: '50% 50%',
   },
   {
-    title: 'Kiswahili / Kenya Sign Language',
-    description: 'Our milestones framework guides you through every stage of leadership development.',
-    imageSrc: '/images/path1.webp',
-    link: 'https://kicd.ac.ke/wp-content/uploads/2024/07/Kiswahili-Lugha-Gredi-10-June-2024.pdf',
+    title: 'Think Aviation',
+    description:
+      'Students engage in rigorous aviation-related coursework: aerodynamics, navigation, weather patterns, regulations, and safety protocols.',
+    imageSrc: '/images/aviation.jpg',
+    link: '/aviation',
+    focal: '50% 30%', // bias a bit higher to keep faces in view
   },
   {
-    title: 'Physical Education',
-    description: 'Learn from seasoned educators and industry leaders who champion your growth.',
-    imageSrc: '/images/study2.webp',
-    link: 'https://kicd.ac.ke/wp-content/uploads/2024/07/Physical-Education-Grade-10-June-2024.pdf',
+    title: 'Think Mandarin',
+    description:
+      'Linguistic exploration thrives at PJA—our Mandarin program builds speaking, listening, reading, and writing for a global future.',
+    imageSrc: '/images/mandarin.jpg',
+    link: '/mandarin',
+    focal: '50% 25%',
   },
   {
-    title: 'Community Service',
-    description: 'Learn from seasoned educators and industry leaders who champion your growth.',
-    imageSrc: '/images/study1.webp',
-    link: 'https://kicd.ac.ke/wp-content/uploads/2024/07/CSL-Grade-10-June-2024.pdf',
-  },
-  {
-    title: 'Creative Arts',
-    description: 'Creative Arts.',
-    imageSrc: '/images/path3.webp',
-    link: 'https://kicd.ac.ke/wp-content/uploads/2024/07/CSL-Grade-10-June-2024.pdf',
-  },
+    title: 'Think Maritime',
+    description:
+      'A captivating voyage into the world of oceans, navigation, seamanship, and maritime culture.',
+    imageSrc: '/images/marine.jpg',
+    link: '/seaferers',
+    focal: '50% 35%',
+  }
 
 ];
 
-const TailorMadeLeadershipPathways: React.FC = () => (
-  <div className="min-h-screen font-sans flex flex-col bg-[#093056]">
-   
-   <section className="py-12 h-[20vh]">
-        <div className="max-w-6xl mx-auto py-6 space-y-6 px-4 text-left">
-          <h1 className="text-4xl font-sans text-left text-white mb-4">
-        Tailor Made Leadership Pathways
-          </h1>
-          <div className="mx-auto mb-6 h-4 bg-white w-full"></div>
+// Local card with face-safe image defaults
+const PathwayCard: React.FC<Pathway> = ({ title, description, imageSrc, link, focal }) => {
+  return (
+    <article className="group overflow-hidden rounded-2xl bg-[#0f1625] ring-1 ring-white/10 transition hover:shadow-xl hover:shadow-black/30">
+      {/* Image wrapper uses aspect ratio to avoid unpredictable cropping heights */}
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <img
+          src={imageSrc}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          className="
+            h-full w-full object-cover
+            md:object-center
+            transition-transform duration-500 group-hover:scale-[1.03]
+          "
+          style={{
+            objectPosition: focal ?? '50% 28%', // default bias toward top to keep faces visible
+          }}
+        />
+        {/* subtle gradient for text legibility if you ever put text over image */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      </div>
+
+      <div className="space-y-3 p-6 text-left">
+        <h3 className="text-xl font-semibold text-white">{title}</h3>
+        <p className="text-sm leading-relaxed text-white/80">{description}</p>
+        <div className="pt-2">
+          <Link
+            to={link}
+            className="inline-flex items-center gap-2 rounded-lg border border-[#bdd6f0]/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#bdd6f0] hover:text-[#0C356A]"
+          >
+            Explore
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+const TailorMadeLeadershipPathways: React.FC = () => {
+  return (
+    <div className="min-h-screen font-sans bg-[#161e2e] text-white">
+      <Helmet>
+        <title>PATHWAYS | Pioneer Junior Academy</title>
+      </Helmet>
+
+      {/* Top bar / breadcrumb area */}
+      <section className="py-10">
+        <div className="mx-auto max-w-6xl px-4">
+          <h1 className="mb-3 text-4xl font-bold">Pathways</h1>
+          <div className="h-4 w-full bg-white/90" />
         </div>
       </section>
 
-    {/* Hero Section */}
-    <section className="relative h-[80vh] bg-cover bg-center flex items-center justify-center "
-      style={{ backgroundImage: "url('/images/path1.webp')"}}>
-    
-    </section>
+      {/* Hero: responsive height + face-safe focal positions */}
+      <section
+        className="
+          relative flex items-center justify-center
+          h-[56vh] md:h-[70vh] lg:h-[78vh]
+          bg-cover bg-no-repeat
+          bg-[position:50%_28%] md:bg-[position:50%_35%] lg:bg-center
+        "
+        style={{ backgroundImage: "url('/images/path.png')" }}
+        aria-label="Pathways hero"
+      >
+        {/* Overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-[#161e2e]/40" />
+      </section>
 
-    {/* Intro & Outcomes */}
-    <section className="py-16 font-sans">
-      <div className="container max-w-4xl space-y-8 mx-auto px-4 gap-12  md:grid-cols-2">
-          <p className="text-gray-100   text-xl leading-relaxed mb-6">
-          At St. Paul Thomas Academy, we value each student's uniqueness, passions, and aspirations. With a strong reputation for trustworthiness, integrity, and academic excellence, our Academy guides students towards responsible adulthood. Our curriculum balances rigorous academic standards with engaging teaching methods, promoting creativity and innovation. We offer a well-rounded education through a variety of academic, co-curricular, and extracurricular activities. Our dedicated educators uphold the highest standards both in and out of the classroom. </p>
+      {/* Intro */}
+      <section className="py-14">
+        <div className="mx-auto max-w-4xl px-4 text-center">
+          <p className="text-2xl font-semibold">
+            Along with the CBC experience, we also expose our students to the following studies
+          </p>
         </div>
-        <div className="container max-w-4xl text-xl md:text-xl space-y-8 mx-auto px-4 gap-12  md:grid-cols-2"> 
-          <h3 className=" font-semibold  text-white mb-4">
-            By the end of senior school, learners will be able to:
-          </h3>
-          <ul className="list-disc list-inside  text-gray-100 space-y-3 leading-snug">
-            <li>Communicate effectively using ICT across varied contexts.</li>
-            <li>Apply mathematical, logical, and critical thinking skills.</li>
-            <li>Use basic research and scientific skills to solve problems.</li>
-            <li>Leverage individual talents for career growth and fulfillment.</li>
-            <li>Uphold national, moral, and religious values in daily life.</li>
-            <li>Apply and promote health care strategies.</li>
-            <li>Protect, preserve, and improve the environment.</li>
-            <li>Demonstrate active local and global citizenship.</li>
-            <li>Show appreciation for diversity in people and cultures.</li>
-            <li>Manage pertinent and contemporary issues responsibly.</li>
-          </ul>
+      </section>
+
+      {/* Cards */}
+      <section className="pb-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3">
+          {cards.map((c) => (
+            <PathwayCard key={c.title} {...c} />
+          ))}
         </div>
-   
-    </section>
+      </section>
 
-    {/* Cards Grid */}
-    <section className="py-16 font-sans  ">
-      <div className="container mx-auto px-4 text-center mb-12">
-        <h2 className="text-4xl py-4 md:text-4xl font-bold text-white">
-        COMPULSORY SUBJECTS 
-        <br />
-        <div className="mx-auto py-2 mt-2 bg-white w-full"></div>   
-        </h2>
-        <p className='font-semibold text-white '>At our School, ALL students will be required to take the following subjects.</p> 
-      </div>
-      <div className="container mx-auto bg-[#093056] px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {cards.map((c, i) => (
-          <InfoCard key={i} {...c} />
-        ))}
-      </div>
-    </section>
-
-    {/* Calls to Action */}
- <section className="flex flex-col py-4 sm:flex-row gap-4 justify-center">
-    
-    <a
-      href="/cadet"
-      rel="noopener"
-      className="inline-block border mb-6  border-[#bdd6f0] bg-transparent px-8 py-3 text-2xl font-bold uppercase text-white hover:bg-[#bdd6f0] hover:text-[#0C356A] transition-colors rounded"
-            >
-     Young Air Cadets
-    </a>
-  </section>
-
-  
-  </div>
-);
+      {/* CTA */}
+      <section className="flex justify-center px-4 pb-16">
+        <a
+          href="/cadet"
+          rel="noopener"
+          className="rounded-lg border border-[#bdd6f0] px-8 py-3 text-xl font-bold uppercase text-white transition hover:bg-[#bdd6f0] hover:text-[#0C356A]"
+        >
+          Young Air Cadets
+        </a>
+      </section>
+    </div>
+  );
+};
 
 export default TailorMadeLeadershipPathways;

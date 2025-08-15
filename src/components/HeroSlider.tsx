@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
                 Make An Enquiry
               </a>
               <Link
-                to="/join-us"
+                to="/join"
                 className="inline-block rounded-lg border border-white/70 text-white font-bold px-6 py-3 hover:bg-white hover:text-[#062747] transition"
               >
                 Join Us

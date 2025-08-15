@@ -43,19 +43,19 @@ const MENU: Record<MenuKey, { label: string; items: MenuItem[] }> = {
     items: [
       { to: "/pathways", label: "Think Pathways" },
       { to: "/detailed-pathways", label: "Think Detailed Pathways" },
-      { to: "/aviation", label: "Think Aviation" },
+      { to: "/cadet", label: "Think Aviation" },
       { to: "/mandarin", label: "Think Mandarin" },
-      { to: "/maritime", label: "Think Maritime" },
+      { to: "/seafarers", label: "Think Maritime" },
     ],
   },
   boarding: {
     label: "Think Boarding",
     items: [
-      { to: "/boarding", label: "Think Boarding" },
+      { to: "/boarding-life", label: "Think Boarding" },
       { to: "/farm-2-fork", label: "Farm To Fork" },
       { to: "/laundry", label: "Laundry" },
       { to: "/chaplaincy", label: "Chaplaincy" },
-      { to: "/nursing", label: "Nursing Care" },
+      { to: "/nursing-care", label: "Nursing Care" },
       { to: "/safety", label: "Safety And Security" },
     ],
   },
@@ -69,10 +69,10 @@ const MENU: Record<MenuKey, { label: string; items: MenuItem[] }> = {
       { to: "/cycling", label: "Cycling" },
       { to: "/skating", label: "Skating" },
       { to: "/golf", label: "Golf" },
-      { to: "/farmer", label: "Farmers Club" },
+      { to: "/farmers", label: "Farmers Club" },
       { to: "/chess", label: "Chess Club" },
-      { to: "/robotics", label: "Robotics Club" },
-      { to: "/basketLife", label: "Basketball" },
+      { to: "/coding", label: "Robotics Club" },
+      { to: "/basket", label: "Basketball" },
     ],
   },
   joinUs: {
@@ -122,12 +122,12 @@ function isExternal(href: string) {
 }
 
 function Divider() {
-  return <span className="hidden lg:block mx-3 h-5 w-px bg-white/40" aria-hidden="true" />
+  return <span className="hidden lg:block mx-1 h-5 w-px bg-white" aria-hidden="true" />
 }
 
 function LinkItem({ item, onClick }: { item: MenuItem; onClick?: () => void }) {
   const base =
-    "block w-full text-left px-4 py-2 rounded-md text-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40" as const
+    "block w-full text-left px-2 py-2 rounded-md text-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40" as const
 
   if (isExternal(item.to)) {
     return (
@@ -170,7 +170,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, children, className
       role="menu"
       aria-hidden={!isOpen}
     >
-      <div className="p-2 space-y-1 max-h-80 overflow-y-auto">{children}</div>
+      <div className="p-1 space-y-1 max-h-60 overflow-y-auto">{children}</div>
     </div>
   )
 }
@@ -247,13 +247,13 @@ const Navbar: React.FC = () => {
      
 
       {/* Bar */}
-      <div className="bg-[#0f1b2b] text-white backdrop-blur py-6 supports-[backdrop-filter]:backdrop-blur border-b border-white/10">
-        <div ref={navRef} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#0f1b2b] text-white backdrop-blur py-4 supports-[backdrop-filter]:backdrop-blur border-b border-white/10">
+        <div ref={navRef} className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
           <div className="h-8 flex items-center justify-between gap-4">
             {/* Brand */}
             <NavLink
               to="/"
-              className="shrink-0 text-base sm:text-lg md:text-xl lg:text-2xl ml-1 font-extrabold tracking-wide text-white hover:text-[#E4AF23] transition-colors"
+              className="shrink-0 text-base sm:text-lg md:text-xl lg:text-xl uppercase  font-extrabold tracking-wide text-white hover:text-[#E4AF23] transition-colors"
             >
               <div className="title">Pioneer Junior Academy</div>
              
@@ -262,11 +262,11 @@ const Navbar: React.FC = () => {
              {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center text-sm font-bold whitespace-nowrap">
           {/* Home */}
-          <div className="flex items-center border-l border-white px-2 first:border-l-0">
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'underline' : 'hover:underline')}>
+          <div className="flex px-3 py-2 items-center uppercase ">
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'text-[#E4AF23]' : 'hover:text-white')}>
               Home
             </NavLink>
-            <Divider/>
+           
           </div>
 
               {/* Order: Think → Pathways → Boarding → Talent → Join Us → Fees */}

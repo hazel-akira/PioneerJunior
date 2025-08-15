@@ -6,7 +6,7 @@ const Fees: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Fees | St Paul Thomas Academy</title>
+        <title>Fees | Pioneer Junior Academy</title>
       </Helmet>
 
       <div

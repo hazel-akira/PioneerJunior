@@ -7,36 +7,31 @@ const cards = [
   {
     title: '24/7 Certified Nursing Care',
     description: 'We provide personalized nursing care tailored to meet the unique needs of each student .Our skilled nurses are committed to delivering high-quality healthcare with compassion and respect.', 
-    imageSrc: '/images/stethoscope.jpg',
+    imageSrc: '/images/Blood-pressure-cuff.jpg',
   },
   {
     title: 'Doctors that care',
-    description: 'We have regular clinics days run every by highly qualified, local doctors. Our mission is to provide a safe and nurturing environment for all patients.  ', 
-    imageSrc: '/images/doc.webp',
+    description: 'We have the expertise of a dedicated doctor who is available twice a week to provide medical consultations. Our mission is to provide a safe and nurturing environment for all patients   ', 
+    imageSrc: '/images/nurse.jpg',
   },
   {
     title: 'Fully Stocked Medicine',
-    description: 'We provide free of charge medication to our students for minor injuries and illness. Our clinic is fully stocked with the appropriate medications to meet your childs need', 
-    imageSrc: '/images/med.webp',
-  },
-  {
-    title: 'Emergency Response Team',
-    description: 'Our on-campus Fire & St John’s Ambulance team - working with local police and fire stations - ensures a safe environment.', 
-    imageSrc: '/images/Fire-engine.jpg',
+    description: "We provide free of charge medication to our students for minor injuries and illness .Our clinic is fully stocked with the appropriate medications to meet your child's need ", 
+    imageSrc: '/images/tablets.jpg',
   },
 ];
 
 const NursingCare: React.FC = () => {
   return (  <>  <Helmet>
-  <title> Nursing Care | St Paul Thomas Academy</title>
+  <title> Nursing Care | Pioneer Junior Academy</title>
 </Helmet>
-  <div className="min-h-screen flex font-sans flex-col bg-[#062747]">
+  <div className="min-h-screen flex font-sans flex-col bg-[#161e2e]">
 
 
     {/* Hero */}
     <section
       className="relative h-[70vh] bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/nurse.webp')" }}
+      style={{ backgroundImage: "url('/images/Blood-pressure-cuff.jpg')" }}
     >
       <div className="absolute inset-0 bg-[#093056] opacity-60" />
       <div className="relative z-10 flex items-center justify-center h-full">
