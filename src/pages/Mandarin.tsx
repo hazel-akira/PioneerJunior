@@ -237,6 +237,7 @@ const ThinkMandarin: React.FC = () => {
               </a>
               <Link
                 to="mailto:admissions@pioneerjunioracademy.co.ke"
+                target='_blank'
                 className="inline-flex items-center gap-2 rounded-lg border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white hover:text-[#0C356A]"
               >
                 Talk to Admissions

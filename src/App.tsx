@@ -9,7 +9,7 @@ import History from './components/History'
 import Leadership from './pages/Leadership'
 
 import Nurture from './pages/Nurture'
-import Nurturing from './pages/nurturing'
+import ThinkDifferent from './pages/ThinkDifferent'
 import Pathways from './pages/TailorMadeLeadershipPathways'
 import DetailedPathways from './pages/Detailedpathways'
 //import SchoolOfSocialSciences from './pages/SchoolOfSocialSciences'
@@ -45,7 +45,7 @@ import Grade8Fees from './components/Grade8Fees'
 import Grade9Fees from './components/grade9fees'
 import TermsAndConditions from './pages/TermsAndConditions'
 import Sitemap from './components/Sitemap'
-import WhoWeAre from './pages/WhoWeAre'
+import Think from './pages/Think'
 import JoinGrade9 from './components/Grade9'
 import AdmissionsPolicy from './components/AdmissionPolicy'
 import YoungAirCadet from './pages/YoungAirCadet'
@@ -76,12 +76,12 @@ export default function App() {
         <Route index element={<Home />} />
 
         {/* top‐level pages */}
-        <Route path='/who' element={<WhoWeAre />} />
+        <Route path='/think' element={<Think />} />
         <Route path='/history' element={<History />} />
         <Route path='/leadership' element={<Leadership />} />
   
        
-        <Route path='/nurturing' element={<Nurturing/>} />
+        <Route path='/different' element={<ThinkDifferent/>} />
         <Route path='/pathways' element={<Pathways />} />
 
         {/* schools 

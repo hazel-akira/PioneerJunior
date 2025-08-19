@@ -224,7 +224,7 @@ const ThinkDetailedPathways: React.FC = () => {
   const heroImage = useMemo(() => '/images/cbc.png', []);
 
   return (
-    <div className="min-h-screen bg-[#161e2e] font-sans text-white">
+    <div className="min-h-screen bg-[#161e2e]  text-white">
       <Helmet>
         <title>Think Detailed Pathways | Pioneer Junior Academy</title>
       </Helmet>

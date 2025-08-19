@@ -106,7 +106,7 @@ const TailorMadeLeadershipPathways: React.FC = () => {
       {/* Hero: responsive height + face-safe focal positions */}
       <section
         className="
-          relative flex items-center justify-center
+          relative  flex items-center justify-center
           h-[56vh] md:h-[70vh] lg:h-[78vh]
           bg-cover bg-no-repeat
           bg-[position:50%_28%] md:bg-[position:50%_35%] lg:bg-center

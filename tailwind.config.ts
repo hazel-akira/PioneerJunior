@@ -1,21 +1,20 @@
 // tailwind.config.ts
-
-import type { Config } from "tailwindcss"
-
+import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
+   
+    fontFamily: {
+      // Optional: named family for headings/brand
+      sansita: ["Sansita", "system-ui"],
+    },
     extend: {
-      fontFamily: {
-        // Sansita for brand, headings, nav
-        sansita: ["Sansita", "system-ui"],
-        // Helvetica for paragraphs
-        helvetica: ["Helvetica Neue", "Helvetica", "Arial", "system-ui"],
-      },
+      // Create a dedicated utility `font-helvetica`
+      
       fontSize: {
-        // Named scale per spec
         title: ["30px", { lineHeight: "1.15", letterSpacing: "0.01em" }],
         h1: ["24px", { lineHeight: "1.2" }],
         h2: ["20px", { lineHeight: "1.25" }],
@@ -26,17 +25,16 @@ export default {
         nav: ["18px", { lineHeight: "1.25", letterSpacing: "0.01em" }],
         btn: ["14px", { lineHeight: "1.1", letterSpacing: "0.01em" }],
       },
-      // Optional: brand colors for buttons (tweak if needed)
       colors: {
-        pjaBlue: "#0f1b2b",     // deep navy (bar)
-        pjaBrand: "#74d1f6",    // light brand blue
-        pjaBlueSolid: "#0C356A",// button blue
-        pjaOrange: "#E4AF23",   // hover orange
+        pjaBlue: "#0f1b2b",
+        pjaBrand: "#74d1f6",
+        pjaBlueSolid: "#0C356A",
+        pjaOrange: "#E4AF23",
       },
       borderRadius: {
-        btn: "2px",             // per spec (Rad 2)
+        btn: "2px",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  plugins: [tailwindcssAnimate],
+} satisfies Config;

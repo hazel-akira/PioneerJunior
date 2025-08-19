@@ -9,14 +9,21 @@ export default function Disclaimer() {
   });
 
   return (
-    <main className="max-w-4xl font-sans mx-auto px-4 py-16">
-      {/* Title */}
-      <h1 className="text-4xl font-sans font-bold mb-2 text-[#0C356A]">Disclaimer</h1>
+    <main className="bg-[#161e2e]/80  text-white  py-16 px-4">
+      <div className="max-w-4xl font-sans mx-auto">
+        {/* Title Card */} 
+        <section className="space-y-8 shadow-lg p-8 w-full bg-[#161e2e] rounded-2xl mb-12">
+          <div className=" shadow-lg p-8 bg-white/30 rounded-2xl mb-12">
+            <h1 className="text-4xl font-bold font-poppins text-center text-[#df8811] mb-2">Disclaimer</h1>
+            <p className="text-sm text-[#df8811]">
+              Last updated: <time dateTime={new Date().toISOString()}>{lastUpdated}</time>
+            </p>
+          </div>
       {/* Dynamic Last Updated */}
-      <p className="text-sm text-gray-600 mb-8">Last updated: {lastUpdated}</p>
+      <p className="text-sm  mb-8">Last updated: {lastUpdated}</p>
 
       {/* Body with Tailwind Typography */}
-      <article className="prose prose-lg text-gray-800">
+      <article className="prose prose-lg ">
         <h2 className="text-[#df8811]">1. Limitation of Liability</h2>
         <p>
           St Paul Thomas Academy makes every effort to ensure the accuracy and reliability of the information provided on this website. However, we cannot guarantee that all information is error-free, complete, or current. St Paul Thomas Academy shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of the use or inability to use the information provided on this website.
@@ -48,9 +55,12 @@ export default function Disclaimer() {
         </p>
 
         <p>
-          By using this website, you acknowledge that you have read, understood, and agree to be bound by the terms of this disclaimer. If you do not agree with any part of this disclaimer, please do not use this website. If you have any questions or concerns about this disclaimer, please <a href="/contact" className="text-[#0C356A] hover:underline">contact us</a>.
+          By using this website, you acknowledge that you have read, understood, and agree to be bound by the terms of this disclaimer. If you do not agree with any part of this disclaimer, please do not use this website.
         </p>
       </article>
+      </section>
+      </div>
     </main>
+    
   );
 }

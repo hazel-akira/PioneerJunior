@@ -7,15 +7,15 @@ const PrivacyPolicyPage: React.FC = () => {
   });
 
   return (
-    <main className="bg-white py-16 px-4">
+    <main className="bg-[#161e2e]/80 py-16 px-4">
       <div className="max-w-4xl font-sans mx-auto">
         {/* Title Card */} 
-        <section className="space-y-8 shadow-lg p-8 w-full bg-white rounded-2xl mb-12">
-          <div className=" shadow-lg p-8 bg-white rounded-2xl mb-12">
-            <h1 className="text-4xl font-bold font-poppins text-center text-[#093057] mb-2">
+        <section className="space-y-8 shadow-lg p-8 w-full bg-[#161e2e] text-white rounded-2xl mb-12">
+          <div className=" shadow-lg p-8 bg-white/30 rounded-2xl mb-12">
+            <h1 className="text-4xl font-bold font-poppins text-center text-[#df8811] mb-2">
               Privacy Policy
             </h1>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-[#df8811]">
               Last updated: <time dateTime={new Date().toISOString()}>{lastUpdated}</time>
             </p>
           </div>
@@ -23,48 +23,40 @@ const PrivacyPolicyPage: React.FC = () => {
           {/* Sections */}
           {/* Intro */}
           <div className="p-6">
-            <h2 className="text-2xl font-semibold font-sans text-[#093057] mb-4 border-l-4 border-[#df8811] pl-4">
+            <h2 className="text-2xl font-semibold font-sans  mb-4 border-l-4 border-[#df8811] pl-4">
               Introduction
             </h2>
-            <p className="text-gray-700 leading-relaxed">
-              This Privacy Policy describes our policies and procedures on the
-              collection, use and disclosure of your information when you use
-              the Service and tells you about your privacy rights and how the
-              law protects you. We use your personal data to provide and
-              improve the Service. By using the Service, you agree to the
-              collection and use of information in accordance with this
-              Privacy Policy.
+            <p className="text-gray-200 leading-relaxed">
+            This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. 
             </p>
           </div>
 
           {/* Interpretation & Definitions */}
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#093057] mb-6 border-l-4 border-[#df8811] pl-4">
+            <h2 className="text-2xl font-semibold  mb-6 border-l-4 border-[#df8811] pl-4">
               Interpretation &amp; Definitions
             </h2>
 
             <div className="mb-6">
-              <h3 className="text-xl font-medium text-[#093057] mb-2">
+              <h3 className="text-xl font-medium  mb-2">
                 Interpretation
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                The words of which the initial letter is capitalized have meanings
-                defined under the following conditions. The following definitions
-                shall have the same meaning regardless of whether they appear in
-                singular or plural.
+              <p className="text-gray-200 leading-relaxed">
+              The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-medium text-[#093057] mb-2">
+              <h3 className="text-xl font-medium = mb-2">
                 Definitions
               </h3>
-              <ul className="space-y-3 text-gray-700">
+              <ul className="space-y-3 ">
                 {[
                   { term: "Account", def: "means a unique account created for you to access our Service or parts of our Service." },
                   { term: "Affiliate", def: "means an entity that controls, is controlled by or is under common control with a party." },
-                  { term: "Company", def: '("the Company", "We", "Us" or "Our") refers to St Paul Thomas Academy, 625-10205 MARAGUA.' },
-                  { term: "Cookies", def: "are small files placed on your device by a website, containing your browsing history details." },
+                  { term: "Company", def: '("the Company", "We", "Us" or "Our", refers to PIONEER JUNIOR ACADEMY, 217-10205 MARAGUA.)' },
                   { term: "Device", def: "means any device that can access the Service such as a computer, cellphone, or tablet." },
                   { term: "Personal Data", def: "is any information that relates to an identified or identifiable individual." },
                   { term: "Service", def: "refers to the Website." },
@@ -74,14 +66,14 @@ const PrivacyPolicyPage: React.FC = () => {
                     term: "Website",
                     def: (
                       <>
-                        refers to St Paul Thomas Academy, accessible from{" "}
+                        refers to PIONEER JUNIOR ACADEMY, accessible from{" "}
                         <a
-                          href="https://stpaulthomasacademy.co.ke/"
+                          href="https://pioneerjunioracademy.co.ke"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#df8811] hover:underline"
                         >
-                          https://stpaulthomasacademy.co.ke/
+                          https://pioneerjunioracademy.co.ke
                         </a>.
                       </>
                     ),
@@ -102,13 +94,13 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* Use of Your Data */}
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#093057] mb-4 border-l-4 border-[#df8811] pl-4">
+            <h2 className="text-2xl font-semibold  mb-4 border-l-4 border-[#df8811] pl-4">
               Use of Your Personal Data
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-200 mb-4">
               The Company may use Personal Data for the following purposes:
             </p>
-            <ul className="space-y-3 text-gray-700">
+            <ul className="space-y-3 text-gray-200">
               {[
                 "To provide and maintain our Service.",
                 "To manage your Account and registration.",
@@ -129,19 +121,19 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* Retention & Security */}
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#093057] mb-4 border-l-4 border-[#df8811] pl-4">
+            <h2 className="text-2xl font-semibold  mb-4 border-l-4 border-[#df8811] pl-4">
               Retention, Transfer &amp; Deletion
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-200 mb-4">
               We retain your Personal Data only as long as necessary and in
               compliance with legal obligations. Your information may be
               processed at our operating offices or other locations where the
               parties involved are located.
             </p>
-            <h3 className="text-xl font-medium text-[#093057] mb-2">
+            <h3 className="text-xl font-medium  mb-2">
               Delete Your Personal Data
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-200">
               You have the right to delete or request deletion of Personal Data
               we have collected about you. You may update, amend, or delete
               your information by signing in to your Account or contacting us
@@ -151,26 +143,26 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* Disclosure & Children */}
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#093057] mb-4 border-l-4 border-[#df8811] pl-4">
+            <h2 className="text-2xl font-semibold  mb-4 border-l-4 border-[#df8811] pl-4">
               Disclosure &amp; Security
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-200 mb-4">
               We may disclose your information in good faith belief that such
               action is necessary to comply with legal obligations, protect our
               rights, prevent wrongdoing, or protect Users.
             </p>
-            <h3 className="text-xl font-medium text-[#093057] mb-2">
+            <h3 className="text-xl font-medium  mb-2">
               Security
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-200 mb-4">
               While we strive to use commercially acceptable means to protect
               your Personal Data, no method of transmission or electronic storage
               is 100% secure.
             </p>
-            <h3 className="text-xl font-medium text-[#093057] mb-2">
+            <h3 className="text-xl font-medium  mb-2">
               Children’s Privacy
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-200">
               Our Service does not address anyone under the age of 13. We do not
               knowingly collect personal information from children under 13.
             </p>
@@ -178,25 +170,25 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* Changes & Contact */}
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#093057] mb-4 border-l-4 border-[#df8811] pl-4">
+            <h2 className="text-2xl font-semibold  mb-4 border-l-4 border-[#df8811] pl-4">
               Changes &amp; Contact
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-200 mb-4">
               We may update this policy from time to time. We will notify you of
               any changes by posting the new Privacy Policy on this page and
               updating the “Last updated” date.
             </p>
-            <h3 className="text-xl font-medium text-[#093057] mb-2">
+            <h3 className="text-xl font-medium  mb-2">
               Contact Us
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-200">
               If you have any questions about this Privacy Policy, you can
               contact us by email:{" "}
               <a
-                href="mailto:admissions@stpaulthomasacademy.ac.ke"
+                href="mailto:info@pioneerjunioracademy.co.ke"
                 className="text-[#df8811] hover:underline"
               >
-                admissions@stpaulthomasacademy.ac.ke
+                info@pioneerjunioracademy.co.ke
               </a>
             </p>
           </div>

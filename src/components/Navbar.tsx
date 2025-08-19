@@ -35,7 +35,7 @@ const MENU: Record<MenuKey, { label: string; items: MenuItem[] }> = {
     items: [
       { to: "/think", label: "Think" },
       { to: "/different", label: "Think different" },
-      { to: "/imaginative", label: "Our Imaginative Team" },
+      { to: "/leadership", label: "Our Imaginative Team" },
     ],
   },
   pathways: {

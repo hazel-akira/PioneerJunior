@@ -12,15 +12,15 @@ const Hero: React.FC = () => {
 
       <section
         id="home"
-        className="relative min-h-[100vh] font-sans flex items-center justify-center overflow-hidden bg-black"
+        className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-black"
       >
-        {/* Static background image (no slider) */}
+        {/* Background image */}
         <img
           src={heroImage}
           alt="Pioneer Junior Academy Campus"
-          className="absolute inset-0 w-full h-full object-cover object-[50%_25%]"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
           loading="eager"
-        
+          decoding="async"
         />
 
         {/* Overlays */}
@@ -29,12 +29,14 @@ const Hero: React.FC = () => {
 
         {/* Content */}
         <div className="relative z-10 w-full">
-          <div className="max-w-6xl mx-auto px-4 md:px-8 py-24 md:py-32 text-center">
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold tracking-wide uppercase text-white drop-shadow">
-              THINK JUNIOR SECONDARY, THINK PIONEER
+          <div className="mx-auto max-w-6xl px-4 md:px-8 py-24 md:py-32 text-center">
+            {/* h1 picks up Sansita globally from your @layer base */}
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold font-sansita tracking-wide uppercase text-white drop-shadow">
+              THINK jUNIOR SECONDARY, THINK PIONEER
             </h1>
 
-            <p className="mt-6 text-base md:text-lg font-helvetica text-white/90 max-w-3xl mx-auto">
+            {/* p picks up Helvetica (body font) globally */}
+            <p className="mt-6 text-base md:text-lg font-sansita text-white/90 max-w-3xl mx-auto">
               We provide a nurturing, future-ready learning environment, grounded
               in excellence and character for every learner.
             </p>

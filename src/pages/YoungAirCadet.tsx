@@ -43,18 +43,22 @@ const YoungAirCadet: React.FC = () => (
       </section>
 
       {/* Hero – on-point (no crop), framed like a slide */}
-      <section className="relative flex items-center justify-center bg-[#161e2e] py-6 md:py-10">
-        <div className="h-[56vh] md:h-[70vh] lg:h-[78vh] w-full max-w-6xl px-4">
-          <div className="relative h-full w-full overflow-hidden rounded-2xl ring-1 ring-white/10 bg-black/20">
-            <img
+     
+            
+      <section
+        className="
+          relative  flex items-center justify-center
+          h-[56vh] md:h-[70vh] lg:h-[78vh]
+          bg-cover bg-no-repeat
+          bg-[position:50%_10%] md:bg-[position:50%_10%] lg:bg-center
+        "><img
               src="/images/aviation.jpg"
               alt="Young Air Cadets"
-              className="absolute inset-0 h-full w-full object-contain"
+              className="absolute inset-0 h-full w-full object-cover"
               loading="eager"
               decoding="async"
             />
-          </div>
-        </div>
+         
       </section>
 
       {/* Intro */}
@@ -137,8 +141,8 @@ const YoungAirCadet: React.FC = () => (
               <p className="mt-1 text-white/80 max-w-2xl">Chat with Admissions or explore our Aviation Pathway to see how Cadets connect with broader studies.</p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link to="mailto:admissions@pioneerjunioracademy.co.ke" className="inline-flex items-center justify-center rounded-lg border border-[#bdd6f0] px-5 py-3 font-semibold text-white transition hover:bg-[#bdd6f0] hover:text-[#0C356A]">Talk to Admissions</Link>
-              <Link to="/aviation" className="inline-flex items-center justify-center rounded-lg border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white hover:text-[#0C356A]">Explore Aviation</Link>
+              <Link to="mailto:admissions@pioneerjunioracademy.co.ke" target='_blank' className="inline-flex items-center justify-center rounded-lg border border-[#bdd6f0] px-5 py-3 font-semibold text-white transition hover:bg-[#bdd6f0] hover:text-[#0C356A]">Talk to Admissions</Link>
+              <Link to="/aviation"   className="inline-flex items-center justify-center rounded-lg border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white hover:text-[#0C356A]">Explore Aviation</Link>
               <Link to="/mandarin" className="inline-flex items-center justify-center rounded-lg border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white hover:text-[#0C356A]">Mandarin Class</Link>
             </div>
           </div>
