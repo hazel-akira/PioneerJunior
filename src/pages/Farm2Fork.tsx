@@ -71,7 +71,7 @@ const Farm2Fork: React.FC = () => {
 
       {/* Hero */}
       <section
-        className="relative h-[70vh] font-sans bg-cover bg-center"
+        className="relative h-[70vh]  bg-cover bg-center"
         style={{ backgroundImage: "url('/images/meal1.jpg')" }}
       >
         <div className="absolute inset-0 bg-[#093056] opacity-20" />

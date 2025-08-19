@@ -7,7 +7,7 @@ const Think: React.FC = () => {
   const heroImage = useMemo(() => '/images/think.jpg', []);
 
   return (
-    <div className="min-h-screen bg-[#161e2e] font-sans text-white">
+    <div className="min-h-screen bg-[#161e2e] font-sansita text-white">
       <Helmet>
         <title>Think | Pioneer Junior Academy</title>
       </Helmet>

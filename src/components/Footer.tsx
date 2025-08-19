@@ -18,7 +18,7 @@ import {
 import { NavLink } from 'react-router-dom'
 
 const Footer: React.FC = () => (
-  <footer className="bg-[#525357] text-white font-sans shadow-lg px-10">
+  <footer className="bg-[#525357] text-white  shadow-lg px-10">
     <div className="max-w-9xl mx-auto py-6">
       {/* Top Separator */}
       <div className="w-full border-t-2 border-white mt-0.5 mb-0.5 text-left" />
@@ -158,18 +158,18 @@ const Footer: React.FC = () => (
     <div className=" mt-6 pt-2">
       {/* Center just the text background */}
       <div className="flex justify-center">
-        <h2 className="px-4 py-2 bg-[#b9782a] fo rounded-full font-bold text-white text-2xl ">
+        <h2 className="px-4 py-2 bg-[#b9782a] fo rounded-full font-semibold text-white text-2xl ">
           Vitae Abudantae | Life In Abundance
         </h2>
       </div>
       {/* Links row */}
-      <div className="flex flex-wrap items-center justify-center mt-2 text-sm text-white space-x-2 font-bold">
+      <div className="flex flex-wrap items-center justify-center mt-2 py-2 px-3 text-lg text-white space-x-2 ">
         <a href="/privacy" className="hover:text-[#df8811]">Privacy Policy</a>
-        <span>|</span>
+        
         <a href="/disclaimer" className="hover:text-[#df8811]">Disclaimer</a>
-        <span>|</span>
+       
         <a href="/sitemap" className="hover:text-[#df8811]">Sitemap</a>
-        <span>|</span>
+       
         <span>Copyright © 2025. All rights reserved.</span>
       </div>
     </div>

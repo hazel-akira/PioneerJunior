@@ -9,7 +9,7 @@ const  BasketballLife: React.FC = () => (
     </Helmet>
 <section className="py-12 h-[20vh]">
         <div className="max-w-4xl mx-auto py-6 space-y-6 px-4 text-left">
-          <h1 className="text-4xl font-sans text-left text-white mb-4">
+          <h1 className="text-4xl  text-left text-white mb-4">
          Basketball Life
           </h1>
           <div className="mx-auto mb-6 h-4 bg-white w-full"></div>

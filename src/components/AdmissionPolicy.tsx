@@ -8,7 +8,7 @@ const AdmissionsPolicy: React.FC = () => (
       <title>Admissions Policy | St Paul Thomas Academy</title>
     </Helmet>
 
-    <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <div className="container mx-auto px-4 py-16 grid grid-cols-1  font-sansita lg:grid-cols-4 gap-8">
       {/* Main Content */}
       <main className="lg:col-span-3 space-y-6 text-white">
         <h2 className="text-3xl  font-bold uppercase text-white">Admissions Policy</h2>

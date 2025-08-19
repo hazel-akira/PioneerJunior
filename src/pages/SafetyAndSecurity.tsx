@@ -24,7 +24,7 @@ const cards = [
 
 const SafetyAndSecurity: React.FC = () => (
   <>
-    <div className="min-h-screen font-sans bg-[#083056]">
+    <div className="min-h-screen  bg-[#083056]">
       <Helmet>
         <title> Safety And Security | Pioneer Junior Academy</title>
         <meta
@@ -40,7 +40,7 @@ const SafetyAndSecurity: React.FC = () => (
     >
       <div className="absolute inset-0 bg-[#093056] opacity-60" />
       <div className="relative z-10 flex items-center justify-center h-full">
-        <h1 className="text-4xl md:text-6xl font-sans font-bold text-white">
+        <h1 className="text-4xl md:text-6xl  font-bold text-white">
         Safety And Security
         </h1>
       </div>
@@ -63,7 +63,7 @@ const SafetyAndSecurity: React.FC = () => (
       
 
       {/* Calls to Action */}
-      <section className="flex flex-col mt-10 sm:flex-row font-sans gap-4 justify-center pb-16">
+      <section className="flex flex-col mt-10 sm:flex-row  gap-4 justify-center pb-16">
         <a
           href="/talent"
           rel="noopener"

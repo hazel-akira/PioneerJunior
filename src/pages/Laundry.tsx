@@ -3,7 +3,7 @@ import { Helmet } from '@dr.pogodin/react-helmet';
 
 
 const Laundry: React.FC = () => (
-  <div className="min-h-screen flex font-sans flex-col bg-[#161e2e]">
+  <div className="min-h-screen flex flex-col bg-[#161e2e]">
 <Helmet>
       <title> Laundry | Pioneer Junior Academy</title>
     </Helmet>
@@ -19,7 +19,7 @@ const Laundry: React.FC = () => (
     </section>
 
     <div className="container max-w-6xl mx-auto px-2 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <main className="lg:col-span-3 text-4xl space-y-6 font-semibold text-gray-100">
+        <main className="lg:col-span-3 text-3xl space-y-6  text-gray-100">
           <p>
           We understand that school life can be hectic, leaving students with little time to manage chores like laundry.
           <br />

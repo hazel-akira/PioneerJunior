@@ -31,12 +31,12 @@ const Hero: React.FC = () => {
         <div className="relative z-10 w-full">
           <div className="mx-auto max-w-6xl px-4 md:px-8 py-24 md:py-32 text-center">
             {/* h1 picks up Sansita globally from your @layer base */}
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold font-sansita tracking-wide uppercase text-white drop-shadow">
-              THINK jUNIOR SECONDARY, THINK PIONEER
+            <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold tracking-wide uppercase text-white drop-shadow">
+              THINK JUNIOR SECONDARY, THINK PIONEER
             </h1>
 
             {/* p picks up Helvetica (body font) globally */}
-            <p className="mt-6 text-base md:text-lg font-sansita text-white/90 max-w-3xl mx-auto">
+            <p className="mt-6 text-base md:text-lg  text-white/90 max-w-3xl mx-auto">
               We provide a nurturing, future-ready learning environment, grounded
               in excellence and character for every learner.
             </p>

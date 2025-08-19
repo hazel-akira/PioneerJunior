@@ -38,7 +38,7 @@ const GetAccess: React.FC = () => {
     <>  <Helmet>
     <title> Get Access | Pioneer Junior Academy</title>
   </Helmet>
-  <div className="flex flex-col min-h-screen font-sans bg-cover bg-center"
+  <div className="flex flex-col min-h-screen  bg-cover bg-center"
   >
   
     {/* Hero / Intro */}

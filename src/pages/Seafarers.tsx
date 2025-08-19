@@ -65,7 +65,7 @@ const ListCard: React.FC<{ heading: string; items: string[]; icon?: React.ReactN
 // Page ----------------------------------------------------------------------
 const ThinkMaritime: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#161e2e] font-sans text-white">
+    <div className="min-h-screen bg-[#161e2e]  text-white">
       <Helmet>
         <title>Think Maritime | Pioneer Junior Academy</title>
       </Helmet>

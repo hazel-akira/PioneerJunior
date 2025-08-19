@@ -7,7 +7,7 @@ const JoinGrade4: React.FC = () => {
      <Helmet>
     <title> Join Grade 7 | Pioneer Junior Academy </title>
     </Helmet>
-  <div className="min-h-screen flex flex-col bg-[#161e2e]">
+  <div className="min-h-screen flex flex-col font-sansita bg-[#161e2e]">
     
     {/* Hero */}
     <section
@@ -19,7 +19,7 @@ const JoinGrade4: React.FC = () => {
     </section>
 
     {/* Main Content */}
-    <main className="flex-grow max-w-4xl mx-auto px-4 py-12 space-y-12" style={{ fontFamily: 'Times New Roman, serif'  }}>
+    <main className="flex-grow max-w-4xl mx-auto px-4 py-12 space-y-12" >
    
       {/* Eligibility */}
       <section>

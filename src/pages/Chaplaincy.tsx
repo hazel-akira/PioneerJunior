@@ -4,7 +4,7 @@ import { Helmet } from '@dr.pogodin/react-helmet';
 
 
 const Chaplaincy: React.FC = () => (
-  <div className="min-h-screen flex font-sans flex-col bg-[#161e2e]">
+  <div className="min-h-screen flex  flex-col bg-[#161e2e]">
 <Helmet>
       <title> Chaplaincy | Pioneer Junior Academy</title>
     </Helmet>

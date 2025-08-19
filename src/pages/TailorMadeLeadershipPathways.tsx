@@ -90,7 +90,7 @@ const PathwayCard: React.FC<Pathway> = ({ title, description, imageSrc, link, fo
 
 const TailorMadeLeadershipPathways: React.FC = () => {
   return (
-    <div className="min-h-screen font-sans bg-[#161e2e] text-white">
+    <div className="min-h-screen bg-[#161e2e] text-white">
       <Helmet>
         <title>PATHWAYS | Pioneer Junior Academy</title>
       </Helmet>
@@ -121,7 +121,7 @@ const TailorMadeLeadershipPathways: React.FC = () => {
       {/* Intro */}
       <section className="py-14">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <p className="text-2xl font-semibold">
+          <p className="text-2xl ">
             Along with the CBC experience, we also expose our students to the following studies
           </p>
         </div>

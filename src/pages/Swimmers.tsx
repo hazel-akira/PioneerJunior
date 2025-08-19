@@ -8,7 +8,7 @@ const SwimmersLife: React.FC = () => {
       <Helmet>
         <title>Swimmers Life | Pioneer Junior Academy</title>
       </Helmet>
-      <div className="min-h-screen font-sans bg-[#161e2e]">
+      <div className="min-h-screen bg-[#161e2e]">
 
       <section className="py-12 h-[20vh]">
         <div className="max-w-4xl mx-auto py-6 space-y-6 px-4 text-left">
@@ -27,7 +27,7 @@ const SwimmersLife: React.FC = () => {
     
     </section>
       <main className="container max-w-4xl text-center mx-auto px-4  py-12">
-        <p className="text-4xl  text-gray-100">
+        <p className="text-3xl  text-gray-100">
         Experience the joy of swimming at Pioneer Junior Academy, where we offer complimentary access to our state-of-the-art facilities and expert coaches to enhance your child's swimming abilities. </p>
       </main>
       {/* Calls to Action */}

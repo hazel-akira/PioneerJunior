@@ -3,3 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force Sansita if Tailwind config isn't working */
+@layer base {
+  html, body {
+    font-family: 'Sansita', system-ui, -apple-system, sans-serif !important;
+  }
+}

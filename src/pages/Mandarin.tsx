@@ -65,7 +65,7 @@ const ListCard: React.FC<{ heading: string; items: string[]; icon?: React.ReactN
 // Page ----------------------------------------------------------------------
 const ThinkMandarin: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#161e2e] font-sans text-white">
+    <div className="min-h-screen bg-[#161e2e]  text-white">
       <Helmet>
         <title>Think Mandarin | Pioneer Junior Academy</title>
       </Helmet>
@@ -96,7 +96,7 @@ const ThinkMandarin: React.FC = () => {
       {/* Intro */}
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <p className="text-xl md:text-2xl font-semibold">
+          <p className="text-xl md:text-2xl ">
             Master a global language while building cultural intelligence, confidence, and 21st‑century skills.
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-3">

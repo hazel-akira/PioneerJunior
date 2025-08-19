@@ -3,7 +3,7 @@ import { HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi';
 
 const FooterContact: React.FC = () => (
   <div>
-    <h4 className="text-[#f4a024] uppercase font-bold mb-4 tracking-wide">
+    <h4 className="text-[#f4a024] uppercase font-sansita font-bold mb-4 tracking-wide">
       Contact Us
     </h4>
     <ul className="space-y-3 text-sm">

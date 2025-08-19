@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function ThinkDifferent() {
   return (
-    <div className="min-h-screen bg-[#161e2e] text-white font-sans">
+    <div className="min-h-screen bg-[#161e2e] text-white ">
       <Helmet>
         <title>Think Different | Pioneer Junior Academy</title>
       </Helmet>
@@ -57,8 +57,8 @@ With that mandate from our customers, we proceeded to establish a unique high sc
         style={{ backgroundImage: "url('/images/magoha1.JPG')" }} 
         aria-label="Think Different"
       >
-        <div className="relative z-10 mx-auto w-full bg-[#161e2e]/30 max-w-6xl px-4 py-16 md:py-24">
-        <p className="text-2xl md:text-2xl font-extrabold leading-tight justify-center">
+        <div className="relative z-10 mx-auto w-full bg-[#161e2e]/50 max-w-6xl px-4 py-16 md:py-24">
+        <p className="text-2xl md:text-2xl  leading-tight justify-center">
           With the change of Kenya's academic curriculum in 2015 from 8-4-4 system to Competency Based Curriculum (CBC), the idea of Pioneer Junior Academy was conceived.
 <br />
 
@@ -78,8 +78,8 @@ With that mandate from our customers, we proceeded to establish a unique high sc
         style={{ backgroundImage: "url('/images/magoha2.JPG')" }} 
         aria-label="Think Different"
       >
-        <div className="relative z-10 mx-auto w-full max-w-3xl bg-[#161e2e]/60 px-4 py-16 md:py-24">
-        <p className="text-2xl md:text-2xl font-extrabold leading-tight justify-center">
+        <div className="relative z-10 mx-auto w-full max-w-3xl bg-[#161e2e]/50 px-4 py-16 md:py-24">
+        <p className="text-2xl md:text-2xl  leading-tight justify-center">
         This meant, different buildings, different Uniform and different class schedules.
 This was actualized in January 2023, when we enrolled our 1st class of Grade 7 students.
 

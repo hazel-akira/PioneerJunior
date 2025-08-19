@@ -253,7 +253,7 @@ const Navbar: React.FC = () => {
             {/* Brand */}
             <NavLink
               to="/"
-              className="shrink-0 text-base sm:text-lg md:text-xl lg:text-xl uppercase  font-extrabold tracking-wide text-white hover:text-[#E4AF23] transition-colors"
+              className="shrink-0 text-base sm:text-lg md:text-xl lg:text-xl   tracking-wide text-white hover:text-[#E4AF23] transition-colors"
             >
               <div className="title">Pioneer Junior Academy</div>
              

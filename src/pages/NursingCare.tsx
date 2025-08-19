@@ -25,7 +25,7 @@ const NursingCare: React.FC = () => {
   return (  <>  <Helmet>
   <title> Nursing Care | Pioneer Junior Academy</title>
 </Helmet>
-  <div className="min-h-screen flex font-sans flex-col bg-[#161e2e]">
+  <div className="min-h-screen flex  flex-col bg-[#161e2e]">
 
 
     {/* Hero */}
@@ -35,7 +35,7 @@ const NursingCare: React.FC = () => {
     >
       <div className="absolute inset-0 bg-[#093056] opacity-60" />
       <div className="relative z-10 flex items-center justify-center h-full">
-        <h1 className="text-4xl md:text-6xl font-sans font-bold text-white">
+        <h1 className="text-4xl md:text-6xl font-bold text-white">
           Nursing Care
         </h1>
       </div>
@@ -55,7 +55,7 @@ const NursingCare: React.FC = () => {
       </div>
     </main>
 {/* Calls to Action */}
-<section className="flex flex-col mt-10 font-sans sm:flex-row gap-4 justify-center pb-16">
+<section className="flex flex-col mt-10 sm:flex-row gap-4 justify-center pb-16">
         <a
           href="/safety"
           rel="noopener"

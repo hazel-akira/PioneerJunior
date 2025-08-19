@@ -1,19 +1,16 @@
 // tailwind.config.ts
-import type { Config } from "tailwindcss";
-import tailwindcssAnimate from "tailwindcss-animate";
+import type { Config } from "tailwindcss"
 
 export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
-   
     fontFamily: {
-      // Optional: named family for headings/brand
-      sansita: ["Sansita", "system-ui"],
+      // Override the default sans completely
+      sans: ["Sansita", "system-ui", "-apple-system", "sans-serif"],
+      sansita: ["Sansita", "system-ui", "-apple-system", "sans-serif"],
     },
     extend: {
-      // Create a dedicated utility `font-helvetica`
-      
       fontSize: {
         title: ["30px", { lineHeight: "1.15", letterSpacing: "0.01em" }],
         h1: ["24px", { lineHeight: "1.2" }],
@@ -36,5 +33,5 @@ export default {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
-} satisfies Config;
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config

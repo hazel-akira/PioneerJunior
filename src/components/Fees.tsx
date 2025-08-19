@@ -10,7 +10,7 @@ const Fees: React.FC = () => {
       </Helmet>
 
       <div
-        className="flex flex-col min-h-screen bg-[url('/images/fees.jpg')] bg-cover bg-center bg-fixed"
+        className="flex flex-col min-h-screen bg-[url('/images/fees.jpg')] bg-cover font-sansita bg-center bg-fixed"
       >
         {/* Fee Levels */}
         <section className="bg-transparent mt-40 py-12">

@@ -33,7 +33,7 @@ const YoungAirCadet: React.FC = () => (
       <title>Young Air Cadet | Pioneer Junior Academy</title>
     </Helmet>
 
-    <div className="min-h-screen bg-[#161e2e] text-white font-sans">
+    <div className="min-h-screen bg-[#161e2e] text-white ">
       {/* Top heading */}
       <section className="py-8 md:py-10">
         <div className="mx-auto max-w-6xl px-4">
@@ -64,7 +64,7 @@ const YoungAirCadet: React.FC = () => (
       {/* Intro */}
       <section className="py-12">
         <div className="mx-auto max-w-4xl px-4">
-          <p className="text-lg md:text-3xl leading-relaxed text-white/90">
+          <p className="text-lg md:text-2xl leading-relaxed text-white/90">
           Students engage in rigorous aviation related academic coursework.
 <br />
           They learn about aerodynamics, navigation, weather patterns, regulations, and safety protocols.

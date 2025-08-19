@@ -6,7 +6,7 @@ import { ArrowUp } from 'lucide-react'
 export const Floating: React.FC = () => (
   <>
     {/* Enroll button (fixed, bouncing) */}
-    <div className="fixed bottom-8 font-sans left-10 z-50 animate-bounce">
+    <div className="fixed bottom-8 font-sansita left-10 z-50 animate-bounce">
       <a
         href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
         target="_blank"

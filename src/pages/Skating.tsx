@@ -8,7 +8,7 @@ const SkatingLife: React.FC = () => (
 
     <section className="py-12 h-[20vh]">
         <div className="max-w-6xl mx-auto py-6 space-y-6 px-4 text-left">
-          <h1 className="text-4xl font-sans text-left text-white mb-4">
+          <h1 className="text-4xl  text-left text-white mb-4">
          Skating Life
           </h1>
           <div className="mx-auto mb-6 h-4 bg-white w-full"></div>
@@ -36,7 +36,7 @@ const SkatingLife: React.FC = () => (
     <a
     href="/golf"
     rel="noopener"
-    className="inline-block border mb-6  font-sans border-[#bdd6f0] bg-transparent px-8 py-3 text-2xl font-bold uppercase text-white hover:bg-[#bdd6f0] hover:text-[#0C356A] transition-colors rounded"
+    className="inline-block border mb-6   border-[#bdd6f0] bg-transparent px-8 py-3 text-2xl font-bold uppercase text-white hover:bg-[#bdd6f0] hover:text-[#0C356A] transition-colors rounded"
             >
      Golf Life
     </a>
