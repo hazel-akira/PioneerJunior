@@ -25,7 +25,7 @@ const cards: Pathway[] = [
     description:
       'Students engage in rigorous aviation-related coursework: aerodynamics, navigation, weather patterns, regulations, and safety protocols.',
     imageSrc: '/images/aviation.jpg',
-    link: '/aviation',
+    link: '/cadet',
     focal: '50% 30%', // bias a bit higher to keep faces in view
   },
   {
