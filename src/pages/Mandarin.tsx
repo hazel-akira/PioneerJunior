@@ -78,20 +78,20 @@ const ThinkMandarin: React.FC = () => {
         </div>
       </section>
 
-      {/* Hero – on-point (no crop), framed like a slide */}
-      <section className="relative flex items-center justify-center bg-[#161e2e] py-6 md:py-10">
-        <div className="h-[56vh] md:h-[70vh] lg:h-[78vh] w-full max-w-6xl px-4">
-          <div className="relative h-full w-full overflow-hidden rounded-2xl ring-1 ring-white/10 bg-black/20">
-            <img
-              src="/images/mandarin.jpg"
-              alt="Mandarin language programme"
-              className="absolute inset-0 h-full w-full object-contain"
-              loading="eager"
-              decoding="async"
-            />
-          </div>
-        </div>
-      </section>
+      <section className="
+  relative flex items-center justify-center
+  h-[70vh] md:h-[70vh] lg:h-[70vh] bg-[#b5b6ca]
+  // Reduced height to show more of the image
+">
+  <img
+    src="/images/mandarin.jpg"
+    alt="mandarin"
+    className="absolute inset-0 h-full w-full object-contain object-[50%_25%]"
+    // Custom positioning to focus on upper part where faces likely are
+    loading="eager"
+    decoding="async"
+  />
+</section>
 
       {/* Intro */}
       <section className="py-10">

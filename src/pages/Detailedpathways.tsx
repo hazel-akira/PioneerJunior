@@ -241,14 +241,13 @@ const ThinkDetailedPathways: React.FC = () => {
 <section
   className="
     relative flex items-center justify-center
-    h-[56vh] md:h-[78vh] lg:h-[80vh]
-    bg-contain bg-center bg-no-repeat
+    h-[56vh] md:h-[78vh] lg:h-[80vh] 
+    bg-contain bg-center bg-no-repeat bg-[#e5e5e5]
   "
   style={{ backgroundImage: `url('${heroImage}')` }}
   aria-label="Detailed Pathways Hero"
 >
-  {/* lighter overlay so edges stay visible */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#161e2e]/40 pointer-events-none" />
+  
 </section>
 
 

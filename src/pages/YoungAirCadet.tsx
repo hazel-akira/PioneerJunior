@@ -45,21 +45,17 @@ const YoungAirCadet: React.FC = () => (
       {/* Hero – on-point (no crop), framed like a slide */}
      
             
-      <section
-        className="
-          relative  flex items-center justify-center
-          h-[56vh] md:h-[70vh] lg:h-[78vh]
-          bg-cover bg-no-repeat
-          bg-[position:50%_10%] md:bg-[position:50%_10%] lg:bg-center
-        "><img
-              src="/images/aviation.jpg"
-              alt="Young Air Cadets"
-              className="absolute inset-0 h-full w-full object-cover"
-              loading="eager"
-              decoding="async"
-            />
-         
-      </section>
+      <section className="
+  relative flex items-center justify-center h-[70vh] md:h-[70vh] lg:h-[70vh]">
+  <img
+    src="/images/aviation.jpg"
+    alt="Young Air Cadets"
+    className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
+    // Custom positioning to focus on upper part where faces likely are
+    loading="eager"
+    decoding="async"
+  />
+</section>
 
       {/* Intro */}
       <section className="py-12">

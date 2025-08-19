@@ -103,20 +103,20 @@ const TailorMadeLeadershipPathways: React.FC = () => {
         </div>
       </section>
 
-      {/* Hero: responsive height + face-safe focal positions */}
-      <section
-        className="
-          relative  flex items-center justify-center
-          h-[56vh] md:h-[70vh] lg:h-[78vh]
-          bg-cover bg-no-repeat
-          bg-[position:50%_28%] md:bg-[position:50%_35%] lg:bg-center
-        "
-        style={{ backgroundImage: "url('/images/path.png')" }}
-        aria-label="Pathways hero"
-      >
-        {/* Overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-[#161e2e]/40" />
-      </section>
+      <section className="
+  relative flex items-center bg-[#c2c2c2] justify-center h-[70vh] md:h-[70vh] lg:h-[70vh]">
+  <img
+    src="/images/path.png"
+    alt="pathways"
+    className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
+    // Custom positioning to focus on upper part where faces likely are
+    loading="eager"
+    decoding="async"
+  />
+</section>
+       
+
+    
 
       {/* Intro */}
       <section className="py-14">

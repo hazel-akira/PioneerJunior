@@ -27,7 +27,7 @@ export default function ThinkDifferent() {
       <section className="-mt-10 md:-mt-14 pb-10 text-2xl md:text-2xl">
         <div className="mx-auto  max-w-6xl  gap-6 px-4 ">
           <div className="rounded-2xl bg-white/10 backdrop-blur-md p-6 md:p-8 ring-1 ring-white/15">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#ffd28c]">Our Beginning</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#e58700]">Our Beginning</h2>
             <p className="mt-3 text-white/90  leading-relaxed">
             Pioneer Junior Academy starts with the establishment of St Paul Thomas Academy, a Private Primary Boys Boarding school located in Samar Location, Ichagaki Ward, Maragua constituency, Murang'a County.  
 <br />

@@ -6,7 +6,7 @@ import { ArrowUp } from 'lucide-react'
 export const Floating: React.FC = () => (
   <>
     {/* Enroll button (fixed, bouncing) */}
-    <div className="fixed bottom-8 font-sansita left-10 z-50 animate-bounce">
+    <div className="fixed bottom-8  left-10 z-50 animate-bounce">
       <a
         href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
         target="_blank"
@@ -17,7 +17,7 @@ export const Floating: React.FC = () => (
           hover:bg-[#bfd5ee] hover:text-gray-900
           shadow-lg rounded-full
           flex items-center justify-center
-          text-center text-sm font-extrabold font-serif
+          text-center text-sm font-semibold 
           transition-colors
         "
         title="Enroll Today"
