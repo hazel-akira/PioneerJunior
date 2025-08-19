@@ -5,7 +5,7 @@ const Location: React.FC = () => (
   <>
     {/* Document head */}
     <Helmet>
-      <title>Location | St Paul Thomas Academy</title>
+      <title>Location |  Pioneer Junior Academy</title>
     </Helmet>
 
     {/* Header Section */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, Clock, GraduationCap, AlertCircle } from 'lucide-react';
-
+import { Helmet } from '@dr.pogodin/react-helmet';
 interface TermData {
   name: string;
   opening: string;
@@ -60,11 +60,16 @@ const CalendarOfEvents: React.FC = () => {
     }
   ];
  
-  
+ 
+
+
  
   return (
    
     <div className="bg-slate-200 min-h-screen">
+ <Helmet>
+      <title>Calendar of Events |  Pioneer Junior Academy</title>
+    </Helmet>
       <div className="container mx-auto p-4 md:p-6">
         {/* Header */}
         <div className="text-center mb-12">

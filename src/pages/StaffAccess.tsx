@@ -1,5 +1,5 @@
 // src/pages/StaffAccess.tsx
-
+import { Helmet } from '@dr.pogodin/react-helmet';
 import {
   EnvelopeIcon,
   ComputerDesktopIcon,
@@ -46,6 +46,9 @@ const accessItems = [
 const StaffAccess: React.FC = () => (
   <div className="flex flex-col min-h-screen bg-[#161e2e]">
     {/* Hero */}
+    <Helmet>
+      <title>Staff Access |  Pioneer Junior Academy</title>
+    </Helmet>
     <section
       className="relative  h-[60vh] flex flex-col items-center justify-center text-white bg-cover bg-center"
       style={{ backgroundImage: "url('/images/staff.jpg')" }}

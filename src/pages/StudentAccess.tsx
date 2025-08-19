@@ -1,5 +1,5 @@
 // src/pages/StudentAccess.tsx
-
+import { Helmet } from '@dr.pogodin/react-helmet';
 
 import {
   EnvelopeIcon,
@@ -41,6 +41,9 @@ const accessItems = [
 const StudentAccess: React.FC = () => (
   <div className="flex flex-col min-h-screen bg-[#161e2e]">
     {/* Hero */}
+    <Helmet>
+      <title>Student Access |  Pioneer Junior Academy</title>
+    </Helmet>
     <section
       className="relative h-[60vh]  flex flex-col items-center justify-center text-white bg-cover bg-center"
       style={{ backgroundImage: "url('/images/stu_Access.jpg')" }}
