@@ -21,7 +21,7 @@ const Location: React.FC = () => (
     {/* Map Section */}
     <section className="w-full h-96 md:h-[70vh]">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.4026722416047!2d37.16022407568768!3d-0.8270423352981284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828a50ca5860f35%3A0xb479dcc48ea204c1!2sSt.Paul%20Thomas%20Academy!5e0!3m2!1sen!2ske!4v1753947638927!5m2!1sen!2ske"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.025408127233!2d37.16211161123885!3d-0.8280456991604246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828a50c74d53417%3A0xff10395f6befaa0!2sPioneer%20School!5e1!3m2!1sen!2ske!4v1755687867136!5m2!1sen!2ske"
         className="border-0 w-full h-full"
         allowFullScreen
         loading="lazy"
