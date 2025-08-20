@@ -65,6 +65,10 @@ import HomeFromHome from './pages/HomeFromHome'
 import Discipline from './pages/Discipline'
 import SafetyAndSecurity from './pages/SafetyAndSecurity'
 import FarmingLife from './pages/Farmers'
+import MathSubstrand from './components/MathSubstrandProps'
+
+import StemPathways from './pages/stemPathways'
+
 
 export default function App() {
   return (
@@ -79,7 +83,7 @@ export default function App() {
         <Route path='/think' element={<Think />} />
         <Route path='/history' element={<History />} />
         <Route path='/leadership' element={<Leadership />} />
-  
+ 
        
         <Route path='/different' element={<ThinkDifferent/>} />
         <Route path='/pathways' element={<Pathways />} />
@@ -89,9 +93,12 @@ export default function App() {
         <Route path='mandarin' element={<Mandarin />} />
         <Route path='detailed-pathways' element={<DetailedPathways />} />
 
+        <Route path='stem-pathways' element={<StemPathways />} />
+
+
         {/* special programs */}
         <Route path='seafarers' element={<Seafarers />} />
-  
+ 
        {/* Nurture */}
         <Route path='/nurture' element={<Nurture/>} />
         <Route path='homefromhome' element={<HomeFromHome />} />
@@ -146,7 +153,7 @@ export default function App() {
         <Route path='StuAccess' element={<StudentAccess />} />
         <Route path='staffAccess' element={<StaffAccess />} />
         <Route path='location' element={<LocationPage />} />
-
+        <Route path='strands' element={<MathSubstrand />} />
      
         
         {/* ad‐hoc info card */}
