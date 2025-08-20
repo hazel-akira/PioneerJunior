@@ -26,7 +26,7 @@ export default function Disclaimer() {
       <article className="prose prose-lg ">
         <h2 className="text-[#df8811]">1. Limitation of Liability</h2>
         <p>
-          St Paul Thomas Academy makes every effort to ensure the accuracy and reliability of the information provided on this website. However, we cannot guarantee that all information is error-free, complete, or current. St Paul Thomas Academy shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of the use or inability to use the information provided on this website.
+        Pioneer Junior Academy makes every effort to ensure the accuracy and reliability of the information provided on this website. However, we cannot guarantee that all information is error-free, complete, or current. Pioneer Junior Academy shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of the use or inability to use the information provided on this website.
         </p>
 
         <h2 className="text-[#df8811]">2. Accuracy of Information</h2>
@@ -36,22 +36,22 @@ export default function Disclaimer() {
 
         <h2 className="text-[#df8811]">3. No Professional Advice</h2>
         <p>
-          The information provided on this website is not intended to be a substitute for professional advice. Visitors to this website should not act upon the information provided without seeking professional guidance. St Paul Thomas Academy does not provide any professional or legal advice through this website.
+          The information provided on this website is not intended to be a substitute for professional advice. Visitors to this website should not act upon the information provided without seeking professional guidance. Pioneer Junior Academy does not provide any professional or legal advice through this website.
         </p>
 
         <h2 className="text-[#df8811]">4. Third-party Content</h2>
         <p>
-          This website may contain links or references to third-party websites, products, or services. These links are provided for convenience only and do not imply endorsement or approval by St Paul Thomas Academy. We have no control over the content or actions of these third-party websites and shall not be responsible for any damages or losses arising from their use.
+          This website may contain links or references to third-party websites, products, or services. These links are provided for convenience only and do not imply endorsement or approval by Pioneer Junior Academy. We have no control over the content or actions of these third-party websites and shall not be responsible for any damages or losses arising from their use.
         </p>
 
         <h2 className="text-[#df8811]">5. Copyright and Intellectual Property</h2>
         <p>
-          All content and materials on this website, including but not limited to text, graphics, logos, images, audio clips, and video clips, are the property of St Paul Thomas Academy or its content suppliers and are protected by copyright and other intellectual property laws. Unauthorized use, reproduction, or distribution of any materials from this website is strictly prohibited.
+          All content and materials on this website, including but not limited to text, graphics, logos, images, audio clips, and video clips, are the property ofPioneer Junior Academy or its content suppliers and are protected by copyright and other intellectual property laws. Unauthorized use, reproduction, or distribution of any materials from this website is strictly prohibited.
         </p>
 
         <h2 className="text-[#df8811]">6. Modification of Terms</h2>
         <p>
-          St Paul Thomas Academy reserves the right to modify, update, or amend the terms of this disclaimer at any time without prior notice. By continuing to use this website, you agree to be bound by the most current version of the disclaimer.
+        Pioneer Junior Academy reserves the right to modify, update, or amend the terms of this disclaimer at any time without prior notice. By continuing to use this website, you agree to be bound by the most current version of the disclaimer.
         </p>
 
         <p>

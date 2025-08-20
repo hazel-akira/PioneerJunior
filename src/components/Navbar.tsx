@@ -35,7 +35,7 @@ const MENU: Record<MenuKey, { label: string; items: MenuItem[] }> = {
     items: [
       { to: "/pathways", label: "Think Pathways" },
       { to: "/detailed-pathways", label: "Think Detailed Pathways" },
-      { to: "/stem-pathways", label: "Stem Pathways" },
+     // { to: "/stem-pathways", label: "Stem Pathways" },
       { to: "/cadet", label: "Think Aviation" },
       { to: "/mandarin", label: "Think Mandarin" },
       { to: "/seafarers", label: "Think Maritime" },
