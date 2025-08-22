@@ -123,11 +123,11 @@ const Footer: React.FC = () => (
         </h3>
         <div className="flex flex-wrap gap-4">
           {[
-            { src: '/images/tt.webp', alt: 'TikTok', href: 'https://www.tiktok.com/@stpaulthomasacademy' },
-            { src: '/images/ig.webp', alt: 'Instagram', href: 'https://www.instagram.com/stpaulthomasacademy/' },
+            { src: '/images/tt.webp', alt: 'TikTok', href: 'https://www.tiktok.com/@pioneerjunioracademy' },
+            { src: '/images/ig.webp', alt: 'Instagram', href: 'https://www.instagram.com/pioneerjunioracademy/' },
             { src: '/images/x.webp', alt: 'Twitter', href: 'https://twitter.com/PGSKenya' },
-            { src: '/images/fb.webp', alt: 'Facebook', href: 'https://www.facebook.com/St-Paul-Thomas-Academy-107086338226802' },
-            { src: '/images/li.webp', alt: 'LinkedIn', href: 'https://www.linkedin.com/company/st-paul-thomas-academy/' },
+            { src: '/images/fb.webp', alt: 'Facebook', href: 'https://www.facebook.com/p/Pioneer-Junior-Academy-100084300072783/' },
+            { src: '/images/li.webp', alt: 'LinkedIn', href: 'https://www.linkedin.com/company/pioneer-junior-academy-kenya/' },
             { src: '/images/yt.webp', alt: 'YouTube', href: 'https://www.youtube.com/channel/UCfLkVtiaT2qq4P29qgJ1-2g' },
           ].map((icon, i) => (
             <a

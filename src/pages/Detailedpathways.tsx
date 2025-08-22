@@ -2,8 +2,8 @@
 import React, { useMemo } from 'react';
 import { Helmet } from '@dr.pogodin/react-helmet';
 import { Link } from 'react-router-dom';
-import { BookOpen, Rocket, Languages, Ship, Download, ArrowRight, CheckCircle, Trophy, ExternalLink } from 'lucide-react';
-
+import { BookOpen, Rocket, Languages, Ship,  ArrowRight, CheckCircle, Trophy, Download, ExternalLink} from 'lucide-react';
+//import StemPathways from './stemPathways'
 // -----------------------------
 // Data
 // -----------------------------
@@ -17,14 +17,7 @@ type Pathway = {
   icon?: React.ReactNode;
 };
 
-type GradeDetail = {
-  id: '7' | '8' | '9';
-  title: string;
-  coreAreas: string[];
-  pathwayElectives: string[];
-  projectsClubs: string[];
-  assessments: string[];
-};
+ 
 
 const pathways: Pathway[] = [
   {
@@ -56,89 +49,7 @@ const pathways: Pathway[] = [
   },
 ];
 
-const grades: GradeDetail[] = [
-  {
-    id: '7',
-    title: 'Grade 7',
-    coreAreas: [
-      'English, Kiswahili & Foreign Language',
-      'Mathematics',
-      'Integrated Science & Health Education',
-      'Social Studies & Life Skills',
-      'Pre-Technical & Pre-Career Education',
-      'Religious Education & Creative Arts',
-      'Physical Education & Sports',
-    ],
-    pathwayElectives: [
-      'Intro to Aviation Fundamentals',
-      'Mandarin Basics (Pinyin, tones, greetings)',
-      'Maritime Basics (water safety, ocean awareness)',
-    ],
-    projectsClubs: [
-      'STEM & Robotics Club',
-      'Languages Club',
-      'Maritime/Scouts & Environmental Club',
-    ],
-    assessments: [
-      'Continuous school-based assessments',
-      'Project work and presentations',
-    ],
-  },
-  {
-    id: '8',
-    title: 'Grade 8',
-    coreAreas: [
-      'English, Kiswahili & Foreign Language',
-      'Mathematics',
-      'Integrated Science & Health Education',
-      'Business Studies & Social Studies',
-      'Pre-Technical & Pre-Career Education',
-      'Creative & Performing Arts',
-      'Physical Education & Sports',
-    ],
-    pathwayElectives: [
-      'Aviation (navigation, weather & safety)',
-      'Mandarin (conversation, character writing)',
-      'Maritime (navigation basics, seamanship)',
-    ],
-    projectsClubs: [
-      'Science Fair Projects',
-      'Cultural Day & Language Exchanges',
-      'Water Safety/First Aid Workshops',
-    ],
-    assessments: [
-      'Competency tasks & practicals',
-      'Term projects and reflective portfolios',
-    ],
-  },
-  {
-    id: '9',
-    title: 'Grade 9',
-    coreAreas: [
-      'English, Kiswahili & Foreign Language',
-      'Mathematics',
-      'Integrated Science & Health Education',
-      'Social Sciences & Business Studies',
-      'Pre-Technical & Pre-Career Education',
-      'Creative/Performing Arts & ICT Integration',
-      'Physical Education & Sports',
-    ],
-    pathwayElectives: [
-      'Aviation (aerodynamics, instrumentation, simulated flights)',
-      'Mandarin (dialogue, culture, intermediate literacy)',
-      'Maritime (navigation, marine environment, safety)',
-    ],
-    projectsClubs: [
-      'Capstone Project (STEM/Language/Maritime)',
-      'Community Service & Leadership',
-      'Career Day & Industry Talks',
-    ],
-    assessments: [
-      'School-based assessments across terms',
-      'Capstone showcase & exhibitions',
-    ],
-  },
-];
+ 
 
 const coreCompetencies = [
   'Communication & Collaboration',
@@ -148,6 +59,111 @@ const coreCompetencies = [
   'Digital Literacy',
   'Learning to Learn',
   'Self-efficacy',
+];
+
+type Grade = {
+  id: number;
+  title: string;
+  coreAreas: string[];
+  pathwayElectives: string[];
+  projectsClubs: string[];
+  assessments: string[];
+};
+
+const grades: Grade[] = [
+  {
+    id: 7,
+    title: 'Grade 7',
+    coreAreas: [
+      'Mathematics',
+      'English',
+      'Kiswahili',
+      'Integrated Science',
+      'Social Studies',
+      'Religious Education',
+      'Creative Arts & Sports',
+      'Business Studies'
+    ],
+    pathwayElectives: [
+      'Aviation Fundamentals',
+      'Mandarin Basics',
+      'Maritime Introduction'
+    ],
+    projectsClubs: [
+      'Science Club',
+      'Debate Club',
+      'Sports Teams',
+      'Music & Arts'
+    ],
+    assessments: [
+      'Continuous Assessment Tests',
+      'Project-Based Assessments',
+      'Portfolio Reviews',
+      'End-of-Term Examinations'
+    ]
+  },
+  {
+    id: 8,
+    title: 'Grade 8',
+    coreAreas: [
+      'Mathematics',
+      'English',
+      'Kiswahili',
+      'Integrated Science',
+      'Social Studies',
+      'Religious Education',
+      'Creative Arts & Sports',
+      'Business Studies'
+    ],
+    pathwayElectives: [
+      'Aviation Systems',
+      'Mandarin Intermediate',
+      'Maritime Operations'
+    ],
+    projectsClubs: [
+      'Robotics Club',
+      'Environmental Club',
+      'Leadership Training',
+      'Community Service'
+    ],
+    assessments: [
+      'Continuous Assessment Tests',
+      'Practical Assessments',
+      'Research Projects',
+      'End-of-Term Examinations'
+    ]
+  },
+  {
+    id: 9,
+    title: 'Grade 9',
+    coreAreas: [
+      'Mathematics',
+      'English',
+      'Kiswahili',
+      'Integrated Science',
+      'Social Studies',
+      'Religious Education',
+      'Creative Arts & Sports',
+      'Business Studies'
+    ],
+    pathwayElectives: [
+      'Aviation Applications',
+      'Mandarin Advanced',
+      'Maritime Leadership'
+    ],
+    projectsClubs: [
+      'Career Guidance',
+      'Entrepreneurship Club',
+      'International Exchange',
+      'Senior Leadership'
+    ],
+    assessments: [
+      'Continuous Assessment Tests',
+      'Final Projects',
+      'External Examinations',
+      'Pathway Certifications'
+    ]
+  }
 ];
 
 // -----------------------------
@@ -170,20 +186,24 @@ const Pill: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   </span>
 );
 
-const ListCard: React.FC<{ heading: string; items: string[]; icon?: React.ReactNode }>
-  = ({ heading, items, icon }) => (
-  <div className="rounded-2xl bg-[#0f1625] p-6 ring-1 ring-white/10 shadow-lg shadow-black/20">
+const ListCard = ({ heading, items, icon }: { heading: string; items: string[]; icon: React.ReactNode }) => (
+  <div className="rounded-xl bg-[#1a2332] p-4 ring-1 ring-white/5">
     <div className="mb-3 flex items-center gap-2 text-white">
       {icon}
-      <h3 className="text-lg font-semibold">{heading}</h3>
+      <h4 className="font-semibold">{heading}</h4>
     </div>
-    <ul className="list-disc pl-5 space-y-1 text-white/85">
-      {items.map((it) => (
-        <li key={it}>{it}</li>
+    <ul className="space-y-2">
+      {items.map((item, index) => (
+        <li key={index} className="text-sm text-white/80 flex items-start gap-2">
+          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#df8811] flex-shrink-0" />
+          {item}
+        </li>
       ))}
     </ul>
   </div>
 );
+
+ 
 
 const PathwayCard: React.FC<Pathway> = ({ title, description, imageSrc, link, focal, icon }) => (
   <article className="group overflow-hidden rounded-2xl bg-[#0f1625] ring-1 ring-white/10 transition hover:shadow-xl hover:shadow-black/30">
@@ -255,7 +275,7 @@ const ThinkDetailedPathways: React.FC = () => {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <p className="text-xl md:text-2xl font-semibold">
-            A clear, structured journey for Grades 7, 8 and 9 - blending CBC core learning with specialised Aviation, Mandarin and Maritime pathways.
+            A clear, structured journey for Grades 7, 8 and 9 - blending CBE core learning with specialised Aviation, Mandarin and Maritime pathways.
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
             <Pill>Holistic Growth</Pill>
@@ -341,8 +361,9 @@ const ThinkDetailedPathways: React.FC = () => {
           </div>
         </div>
       </section>
+  {/*    <StemPathways/>
 
-      {/* Pathway Cards */}
+       Pathway Cards */}
       <section className="pb-8">
         <SectionTitle
           title="Specialised Pathways"
@@ -354,8 +375,9 @@ const ThinkDetailedPathways: React.FC = () => {
           ))}
         </div>
       </section>
+     
 
-      {/* Grade Details */}
+      {/* Grade Details  */}
       <section className="py-12">
         <SectionTitle
           title="Grade-by-Grade Details"
@@ -369,9 +391,9 @@ const ThinkDetailedPathways: React.FC = () => {
                 <h3 className="text-2xl font-bold text-white">{g.title}</h3>
                 <div className="hidden md:flex items-center gap-2 text-sm text-white/70">
                   <a href={`#grade-7`} className="hover:text-white">Grade 7</a>
-                  <span>•</span>
+                  <span className='text-[#df8811]' >•</span>
                   <a href={`#grade-8`} className="hover:text-white">Grade 8</a>
-                  <span>•</span>
+                  <span className='text-[#df8811]'>•</span>
                   <a href={`#grade-9`} className="hover:text-white">Grade 9</a>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Users, BookOpen, Zap } from 'lucide-react';
-import {motion} from 'framer-motion'
+//import {motion} from 'framer-motion'
 import MathSubstrand from '../components/MathSubstrandProps';
  
 // Types
@@ -237,94 +237,7 @@ const Stem: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-100">
      
-      {/* Enhanced Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{
-            backgroundImage: "url('/stemimg.webp')"
-          }}
-        />
-        <div className="absolute inset-0 bg-slate-900/50" />
-       
-        <div className="relative z-10 container mx-auto px-6 text-left">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              SCIENCE TECHNOLOGY ENGINEERING AND MATHEMATICS (STEM) SCHOOL  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Pathways</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed font-light">
-              Explore our three specialized tracks designed to unlock your potential in
-              <span className="font-semibold text-blue-200"> Science, Technology, Engineering & Mathematics</span>
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="bg-white/20 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
-                <span className="text-white font-medium">3 Specialized Tracks</span>
-              </div>
-              <div className="bg-white/20 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
-                <span className="text-white font-medium">15+ Subject Areas</span>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="text-white/70" size={32} />
-        </div>
-      </section>
- 
-      {/* Message Section */}
-      <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-slate-300">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-start md:space-x-12">
-            {/* Dean's Message */}
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:w-1/2 space-y-6 mb-12 md:mb-0"
-            >
-              <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 leading-tight whitespace-nowrap">
-                MESSAGE FROM THE DEAN
-              </h2>
-              <div className="w-24 h-1.5 bg-[#f4a024] rounded-full"></div>
-              <div className="text-lg text-gray-700 space-y-4">
-                <p>
-                  This program aims to inspire young women to explore the fields of science, technology, engineering, and mathematics.
-                  Through hands-on projects, mentorship opportunities, and collaboration with industry professionals, we are committed to empowering our students to excel in these vital disciplines. Together, let’s ignite a passion for STEM and pave the way for future leaders.
-                </p>
-                <p>Details of each subject area are provided below.</p>
-                <p className="font-medium">Best regards,</p>
-                <p className="font-semibold text-blue-900">Dean of Academics</p>
-              </div>
-            </motion.div>
- 
-            {/* Head of School's Message */}
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="md:w-1/2 space-y-6"
-            >
-              <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 leading-tight md:whitespace-nowrap">
-                MESSAGE FROM THE HEAD OF STEM SCHOOL
-              </h2>
-              <div className="w-24 h-1.5 bg-[#f4a024] rounded-full"></div>
-              <div className="text-lg text-gray-700 space-y-4">
-                <p>
-                  At Pioneer Girls school, senior students interested in Science, Technology, Engineering and Mathematics (STEM) career, will be required to select 2 subjects' area of interest and focus.
-                </p>
-                <p>Details of each subject area are provided below.</p>
-                <p className="font-medium">Best regards,</p>
-                <p className="font-semibold text-blue-900">Head of School</p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </div>
- 
+      
       {/* Enhanced Tracks Section */}
       <main className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
