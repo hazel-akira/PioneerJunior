@@ -14,7 +14,7 @@ const Location: React.FC = () => (
         <h1 className="text-3xl md:text-4xl font-bold">
           We look forward to welcoming you to Pioneer Junior Academy
         </h1>
-        <div className="mt-4 h-1 w-24 bg-[white] mx-auto"></div>
+        <div className="mt-4 h-1 w-24  mx-auto"></div>
       </div>
     </section>
 

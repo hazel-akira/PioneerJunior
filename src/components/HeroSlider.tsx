@@ -1,6 +1,6 @@
 // src/components/Hero.tsx
 import { Link } from "react-router-dom";
-import heroImage from "/images/pja-band.png";
+import heroImage from "/images/pja-band.webp";
 import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Hero: React.FC = () => {

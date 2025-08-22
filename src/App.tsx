@@ -68,7 +68,7 @@ import FarmingLife from './pages/Farmers'
 import MathSubstrand from './components/MathSubstrandProps'
 
 import StemPathways from './pages/stemPathways'
-
+//import FloatingAdmissionTimer from "./components/FloatingAdmissionTimer";
 
 export default function App() {
   return (
@@ -82,9 +82,7 @@ export default function App() {
         {/* top‐level pages */}
         <Route path='/think' element={<Think />} />
         <Route path='/history' element={<History />} />
-        <Route path='/leadership' element={<Leadership />} />
- 
-       
+        <Route path='/leadership' element={<Leadership />} />   
         <Route path='/different' element={<ThinkDifferent/>} />
         <Route path='/pathways' element={<Pathways />} />
 
@@ -178,6 +176,15 @@ export default function App() {
   
     </Routes>
     <Floating />
+    {/*<FloatingAdmissionTimer
+  target="2025-09-30T23:59:59+03:00"
+  start="2025-08-01T00:00:00+03:00"
+  layout="bar"
+  position="bottom-center"   
+  offset={28}               
+  ctaText="Apply for Grade 10"
+  ctaHref="https://enquireto.pioneergroupofschools.co.ke"
+/>*/}
     </>
   )
 }
