@@ -3,22 +3,12 @@ import React from "react";
 
 interface ModalProps {
   show: boolean;
-  logoSrc: string;
-  title: string;
   imageSrc: string;
   onClose: () => void;
-  onConfirm?: () => void;
   enquiryUrl: string;
 }
 
-const Modal: React.FC<ModalProps> = ({
-  show,
-
-  title,
-  imageSrc,
-  onClose,
-  enquiryUrl,
-}) => {
+const Modal: React.FC<ModalProps> = ({ show, imageSrc, onClose, enquiryUrl }) => {
   if (!show) return null;
 
   return (
@@ -27,31 +17,21 @@ const Modal: React.FC<ModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="rounded-xl shadow-2xl bg-white max-w-xl w-full overflow-hidden"
+        className="relative max-w-2xl w-full rounded-xl overflow-hidden shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="px-6 py-6 border-b border-gray-300">
-          <div className="flex items-center gap-4">
-            
-            <h3 className="text-2xl text-black font-semibold">{title}</h3>
-          </div>
-        </div>
+        {/* Image */}
+        <img
+          src={imageSrc}
+          alt="Popup"
+          className="w-full h-auto object-cover"
+        />
 
-        {/* Image Section */}
-        <div className="w-full">
-          <img
-            src={imageSrc}
-            alt={title}
-            className="w-full h-70 object-cover"
-          />
-        </div>
-
-        {/* Footer Buttons */}
-        <div className="flex justify-end gap-4 bg-white px-6 py-4 border-t border-gray-200">
+        {/* Overlay Buttons */}
+        <div className="absolute bottom-4 right-4 flex gap-3">
           <button
             onClick={onClose}
-            className="px-5 py-2 bg-gray-900 hover:bg-gray-700 text-white rounded"
+            className="px-4 py-2 bg-gray-900/80 hover:bg-gray-700 text-white rounded-lg"
           >
             Close
           </button>
@@ -59,7 +39,7 @@ const Modal: React.FC<ModalProps> = ({
             href={enquiryUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2 bg-[#74d1f6] hover:bg-[#df8811] text-white rounded"
+            className="px-4 py-2 bg-[black] hover:bg-[#df8811] text-white rounded-lg"
           >
             Apply Now
           </a>
