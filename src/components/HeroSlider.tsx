@@ -1,5 +1,5 @@
 // src/components/Hero.tsx
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import heroImage from "/images/pja-band.webp";
 import { Helmet } from "@dr.pogodin/react-helmet";
 
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
               in excellence and character for every learner.
             </p>
 
-            <div className="mt-10 flex items-center justify-center gap-4">
+           {/* <div className="mt-10 flex items-center justify-center gap-4">
               <a
                 href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
                 className="inline-block rounded-lg bg-white/95 text-[#062747] font-bold px-6 py-3 hover:bg-white transition"
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
               >
                 Join Us
               </Link>
-            </div>
+            </div>*/} 
           </div>
         </div>
       </section>
