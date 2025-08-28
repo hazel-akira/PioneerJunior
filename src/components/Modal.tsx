@@ -13,7 +13,7 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({
   show,
-  logoSrc,
+
   title,
   imageSrc,
   onClose,
@@ -33,11 +33,7 @@ const Modal: React.FC<ModalProps> = ({
         {/* Header */}
         <div className="px-6 py-6 border-b border-gray-300">
           <div className="flex items-center gap-4">
-            <img
-              src={logoSrc}
-              alt="Logo"
-              className="h-12 w-auto object-contain"
-            />
+            
             <h3 className="text-2xl text-black font-semibold">{title}</h3>
           </div>
         </div>
