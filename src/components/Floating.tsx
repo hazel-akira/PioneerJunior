@@ -12,12 +12,13 @@ export const Floating: React.FC = () => (
         target="_blank"
         rel="noopener noreferrer"
         className="
-          w-16 h-16
-          bg-[#74d1f6] text-black
-          hover:bg-[#bfd5ee] hover:text-gray-900
+         w-20 h-20 fixed bottom-30 z-50 
+         sm:bottom-10
+          bg-[#df8811] text-white
+          hover:bg-[#093057] hover:text-white
           shadow-lg rounded-full
           flex items-center justify-center
-          text-center text-sm font-semibold 
+          text-center text-sm font-extrabold font-serif
           transition-colors
         "
         title="Enroll Today"
@@ -30,8 +31,9 @@ export const Floating: React.FC = () => (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       className="
-        fixed bottom-2 right-2 z-50
-        bg-[#74d1f6] backdrop-blur-md
+        fixed bottom-40 right-4 z-50
+        sm:bottom-10 md:bottom-24 sm:right-10
+        bg-[#df8811] backdrop-blur-md
         w-10 h-10 rounded-full
         hover:bg-opacity-40
         flex items-center justify-center
@@ -39,7 +41,7 @@ export const Floating: React.FC = () => (
       "
       aria-label="Scroll to top"
     >
-      <ArrowUp className="text-black" size={20} />
+      <ArrowUp className="text-black" size={20}/>
     </button>
   </>
 )

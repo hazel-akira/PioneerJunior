@@ -1,5 +1,5 @@
 // src/components/Modal.tsx
-
+import React from "react";
 
 interface ModalProps {
   show: boolean;
@@ -8,7 +8,7 @@ interface ModalProps {
   imageSrc: string;
   onClose: () => void;
   onConfirm?: () => void;
-  enquiryUrl: string; // Added enquiryUrl prop
+  enquiryUrl: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -17,21 +17,21 @@ const Modal: React.FC<ModalProps> = ({
   title,
   imageSrc,
   onClose,
-  enquiryUrl, // Destructure enquiryUrl
+  enquiryUrl,
 }) => {
   if (!show) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50  flex items-center justify-center  bg-opacity-60"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
       onClick={onClose}
     >
       <div
-        className=" rounded-xl shadow-2xl bg-white opacity-100 w-3/4 max-w-xl overflow-hidden"
+        className="rounded-xl shadow-2xl bg-white max-w-xl w-full overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="px-6 py-6 border-b-2  border-gray-300">
+        <div className="px-6 py-6 border-b border-gray-300">
           <div className="flex items-center gap-4">
             <img
               src={logoSrc}
@@ -42,28 +42,30 @@ const Modal: React.FC<ModalProps> = ({
           </div>
         </div>
 
-        {/* Full-width Image */}
-        <div className="w-full  object-contain ">
+        {/* Image Section */}
+        <div className="w-full">
           <img
             src={imageSrc}
-            alt="Modal Content"
-            className="w-full h-[70vh] px-6 py-6  object-contain"
+            alt={title}
+            className="w-full h-70 object-cover"
           />
         </div>
 
         {/* Footer Buttons */}
-        <div className="flex justify-end gap-4  bg-white  px-6 py-4  border-t-2 border-gray-200">
+        <div className="flex justify-end gap-4 bg-white px-6 py-4 border-t border-gray-200">
           <button
             onClick={onClose}
-            className="px-5 py-2 bg-gray-900 hover:bg-gray-400 text-gray-300 rounded"
+            className="px-5 py-2 bg-gray-900 hover:bg-gray-700 text-white rounded"
           >
             Close
           </button>
           <a
             href={enquiryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2 bg-[#74d1f6] hover:bg-[#df8811] text-white rounded"
           >
-          Apply Now
+            Apply Now
           </a>
         </div>
       </div>
