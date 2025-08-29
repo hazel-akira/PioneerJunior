@@ -1,5 +1,6 @@
 // src/components/Modal.tsx
 import React from "react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 interface ModalProps {
   show: boolean;
@@ -27,19 +28,31 @@ const Modal: React.FC<ModalProps> = ({ show, imageSrc, onClose, enquiryUrl }) =>
           className="w-full h-auto object-cover"
         />
 
-        {/* Overlay Buttons */}
+        {/* X Icon (mobile only) */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 sm:hidden p-2 bg-black hover:bg-gray-700 text-white rounded-lg"
+          aria-label="Close"
+        >
+          <XMarkIcon className="h-5 w-5" />
+        </button>
+
+        {/* Bottom Overlay Buttons */}
         <div className="absolute bottom-4 right-4 flex gap-3">
+          {/* Text button for desktop */}
           <button
             onClick={onClose}
-            className="px-4 py-2 bg-gray-900/80 hover:bg-gray-700 text-white rounded-lg"
+            className="hidden sm:block px-4 py-2 bg-gray-900/80 hover:bg-gray-700 text-white rounded-lg"
           >
             Close
           </button>
+
+          {/* Apply Button */}
           <a
             href={enquiryUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-[black] hover:bg-[#df8811] text-white rounded-lg"
+            className="px-4 py-2 bg-black hover:bg-[#df8811] text-white rounded-lg"
           >
             Apply Now
           </a>

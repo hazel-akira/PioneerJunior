@@ -1,19 +1,18 @@
 // src/components/FloatingActions.tsx
-import React from 'react'
+//import React from 'react'
 //import { Link } from 'react-router-dom'
 import { ArrowUp } from 'lucide-react'
 
-export const Floating: React.FC = () => (
+export const Floating  = () => (
   <>
     {/* Enroll button (fixed, bouncing) */}
-    <div className="fixed bottom-8  left-10 z-50 animate-bounce">
+    <div className="fixed bottom-8 left-10 z-50 animate-bounce">
       <a
         href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
         target="_blank"
         rel="noopener noreferrer"
         className="
-         w-20 h-20 fixed bottom-30 z-50 
-         sm:bottom-10
+          w-20 h-20 fix  sm:bottom-
           bg-[#df8811] text-white
           hover:bg-[#093057] hover:text-white
           shadow-lg rounded-full
@@ -31,8 +30,8 @@ export const Floating: React.FC = () => (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       className="
-        fixed bottom-40 right-4 z-50
-        sm:bottom-10 md:bottom-24 sm:right-10
+        fixed bottom-15 right-4 z-50
+        sm:bottom-10 md:bottom-14 sm:right-10
         bg-[#df8811] backdrop-blur-md
         w-10 h-10 rounded-full
         hover:bg-opacity-40
@@ -41,7 +40,7 @@ export const Floating: React.FC = () => (
       "
       aria-label="Scroll to top"
     >
-      <ArrowUp className="text-black" size={20}/>
+      <ArrowUp className="text-white" size={20} />
     </button>
   </>
 )
