@@ -23,7 +23,7 @@ const accessItems = [
   },
   {
     title: 'Online Library',
-    url: 'https://elearning.pioneerschools.ac.ke',
+    url: 'https://library.stpaulthomasacademy.co.ke/',
     Icon: BookOpenIcon,
   },
   {
