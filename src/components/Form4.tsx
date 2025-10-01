@@ -64,7 +64,7 @@ const JoinForm4: React.FC = () => (
         </p>
         <div className="text-center">
           <a
-            href="https://enquireto.pioneergroupofschools.co.ke"
+            href="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke"
             className="inline-block bg-[#E4AF23] text-[#093056] font-bold py-3 px-8 rounded-lg hover:bg-yellow-500 transition"
           >
             Join to Register

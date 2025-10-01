@@ -28,7 +28,7 @@ export default function Layout() {
         target="2025-09-30T23:59:59+03:00"
         start="2025-08-01T00:00:00+03:00"
         ctaText="Apply for Grade 10"
-        ctaHref="https://enquireto.pioneergroupofschools.co.ke"
+        ctaHref="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke"
         heading="Grade 10 admissions close in"
       />*/}
     </div>

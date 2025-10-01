@@ -8,7 +8,7 @@ export const Floating  = () => (
     {/* Enroll button (fixed, bouncing) */}
     <div className="fixed bottom-8 left-10 z-50 animate-bounce">
       <a
-        href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
+        href="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F"
         target="_blank"
         rel="noopener noreferrer"
         className="

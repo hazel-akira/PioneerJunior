@@ -20,7 +20,7 @@ const Home: React.FC = () => {
        
       
         imageSrc="/images/modal1.webp"
-        enquiryUrl="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
+        enquiryUrl="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F"
         onClose={() => setShowModal(false)}
       />
 

@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
 
            {/* <div className="mt-10 flex items-center justify-center gap-4">
               <a
-                href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
+                href="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F"
                 className="inline-block rounded-lg bg-white/95 text-[#062747] font-bold px-6 py-3 hover:bg-white transition"
               >
                 Make An Enquiry

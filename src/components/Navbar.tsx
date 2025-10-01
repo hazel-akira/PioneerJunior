@@ -75,7 +75,7 @@ const MENU: Record<MenuKey, { label: string; items: MenuItem[] }> = {
       { to: "/grade7", label: "Join Grade 7" },
       { to: "/grade8", label: "Join Grade 8" },
       { to: "/grade9", label: "Join grade9" },
-      { to: "https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F", label: "Enquire" },
+      { to: "https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F", label: "Enquire" },
     ],
   },
   fees: {

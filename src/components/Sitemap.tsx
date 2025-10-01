@@ -61,7 +61,7 @@ const Sitemap: React.FC = () => (
               <li><a href="/grade7fee" className="hover:text-[#df8811]">Grade 7 Fees</a></li>
               <li><a href="/grade8fee" className="hover:text-[#df8811]">Grade 8 Fees</a></li>
               <li><a href="/grade9fee" className="hover:text-[#df8811]">Grade 9 Fees</a></li>
-              <li><a className="hover:text-[#df8811]" href="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F">Enquire</a></li>
+              <li><a className="hover:text-[#df8811]" href="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F">Enquire</a></li>
             </ul>
           </div>
           

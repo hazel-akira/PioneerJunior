@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
       { to: '/grade5', label: 'Join Grade 5' },
       { to: '/grade6', label: 'Join grade6' },
       { to: '/adm', label: 'Admissions Policy' },
-      { to: 'https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F', label: 'Enquire' },
+      { to: 'https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F', label: 'Enquire' },
     ],
     getAccess: [
       { to: '/access', label: 'Get Access' },
