@@ -80,14 +80,14 @@ const PaymentMethodCard: React.FC<{ method: string; accepted: boolean }> = ({ me
  
 export default function grade6Fees() {
   const termFees = [
-    { term: "TERM 1", amount: "KES 68,400" },
-    { term: "TERM 2", amount: "KES 68,400" },
-    { term: "TERM 3", amount: "KES 68,400" }
+    { term: "TERM 1", amount: "KES 105,200" },
+    { term: "TERM 2", amount: "KES 105,200" },
+    { term: "TERM 3", amount: "KES 105,200" }
   ];
  
   const oneOffCharges = [
     { title: "Non-refundable Commitment Fee", amount: "KES 20,000" },
-    { title: "Extra charge for uniform, bedding and textbooks", amount: "KES 100,000" },
+    { title: "Extra charge for uniform, bedding and textbooks", amount: "KES 30,000" },
     { title: "Free transport to and from Nanyuki, Mombasa, and Embu", isFree: true }
   ];
  
@@ -136,7 +136,7 @@ export default function grade6Fees() {
             ))}
             <TermFeeCard
               term="ANNUAL TOTAL"
-              amount="KES 205,200"
+              amount="KES 315,600"
               isAnnual={true}
             />
           </div>
