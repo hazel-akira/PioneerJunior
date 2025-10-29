@@ -1,7 +1,7 @@
 
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-
+import ExamBanner from "./components/ExamBanner";
 // pages / components
 import Home from './pages/Home'
 //import Transform from './pages/Transform'
@@ -94,7 +94,7 @@ export default function App() {
 
         <Route path='stem-pathways' element={<StemPathways />} />
 
-
+        <Route path='exam-banner' element={<ExamBanner />} />
         {/* special programs */}
         <Route path='seafarers' element={<Seafarers />} />
  
@@ -172,6 +172,9 @@ export default function App() {
         <Route path='/sitemap' element={<Sitemap/>}/>
         {/* 404 Not Found route */}
         <Route path="*" element={<NotFound />} />
+
+
+
       
       </Route>
   

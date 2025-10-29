@@ -2,7 +2,7 @@ const Hero = () => (
   <section
     className="w-full min-h-[90vh] flex flex-col justify-center items-center relative bg-cover bg-center brightness-80"
     style={{
-      backgroundImage: "url('/images/hero.jpg')",
+      backgroundImage: "url('/images/image.png')",
     }}
   >
     {/* Content */}

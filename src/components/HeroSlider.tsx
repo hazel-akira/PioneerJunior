@@ -1,6 +1,4 @@
-// src/components/Hero.tsx
-//import { Link } from "react-router-dom";
-import heroImage from "/images/pja-band.webp";
+import heroImage from "/images/image.png";
 import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Hero: React.FC = () => {
@@ -12,50 +10,30 @@ const Hero: React.FC = () => {
 
       <section
         id="home"
-        className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-black"
+        className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-[#062747]"
       >
         {/* Background image */}
         <img
           src={heroImage}
           alt="Pioneer Junior Academy Campus"
-          className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
+          className="absolute inset-0 w-full h-full object-contain   "
           loading="eager"
           decoding="async"
         />
 
-        {/* Overlays */}
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#062747]/80 via-[#062747]/40 to-transparent" />
+        {/* Overlay (optional — use lighter opacity for readability) */}
+        <div className="absolute inset-0 " />
 
         {/* Content */}
-        <div className="relative z-10 w-full">
-          <div className="mx-auto max-w-6xl px-4 md:px-8 py-24 md:py-32 text-center">
-            {/* h1 picks up Sansita globally from your @layer base */}
-            <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold tracking-wide uppercase text-white drop-shadow">
-              THINK JUNIOR SECONDARY, THINK PIONEER
-            </h1>
+        <div className="relative z-10 w-full text-center px-4 md:px-8 py-24 md:py-32">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase text-white drop-shadow-lg">
+            THINK JUNIOR SECONDARY, THINK PIONEER
+          </h1>
 
-            {/* p picks up Helvetica (body font) globally */}
-            <p className="mt-6 text-base md:text-lg  text-white/90 max-w-3xl mx-auto">
-              We provide a nurturing, future-ready learning environment, grounded
-              in excellence and character for every learner.
-            </p>
-
-           {/* <div className="mt-10 flex items-center justify-center gap-4">
-              <a
-                href="https://enquireto.pioneergroupofschools.co.ke/main/register?school=pioneerjunioracademy.co.ke/SignIn?ReturnUrl=%2F"
-                className="inline-block rounded-lg bg-white/95 text-[#062747] font-bold px-6 py-3 hover:bg-white transition"
-              >
-                Make An Enquiry
-              </a>
-              <Link
-                to="/join"
-                className="inline-block rounded-lg border border-white/70 text-white font-bold px-6 py-3 hover:bg-white hover:text-[#062747] transition"
-              >
-                Join Us
-              </Link>
-            </div>*/} 
-          </div>
+          <p className="mt-6 text-base md:text-lg text-white/90 max-w-3xl mx-auto">
+            We provide a nurturing, future-ready learning environment, grounded
+            in excellence and character for every learner.
+          </p>
         </div>
       </section>
     </>

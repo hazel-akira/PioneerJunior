@@ -2,7 +2,7 @@
 import  { useState } from 'react';
 import Hero from '../components/HeroSlider';
 import Modal from '../components/Modal';
-
+//import ExamBanner from "../components/ExamBanner";
 
 const Home: React.FC = () => {
   const [showModal, setShowModal] = useState(true);
@@ -13,8 +13,8 @@ const Home: React.FC = () => {
 
       {/* Hero Section */}
       <Hero />
-
-      {/* Enquiry Modal */}
+     {/* <ExamBanner />
+       Enquiry Modal */}
       <Modal
         show={showModal}
        

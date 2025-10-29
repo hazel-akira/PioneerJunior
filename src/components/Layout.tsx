@@ -3,6 +3,7 @@ import { Helmet } from '@dr.pogodin/react-helmet'
 import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
+//import ExamBanner from "../components/ExamBanner";
 //import FloatingAdmissionTimer from './FloatingAdmissionTimer'  // ⬅️ import sticky timer
 
 export default function Layout() {
@@ -10,9 +11,9 @@ export default function Layout() {
     <div className="flex flex-col min-h-screen">
       <Helmet>
         <title>Pioneer Junior Academy</title>
-      </Helmet>
-
-      {/* Navbar always at top */}
+      </Helmet>{/*
+<ExamBanner/>
+       Navbar always at top */}
       <Navbar />
 
       {/* Page content */}
