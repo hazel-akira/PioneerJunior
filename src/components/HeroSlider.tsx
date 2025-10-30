@@ -152,13 +152,13 @@ const Kjseawishes: React.FC = () => {
           ))}
         </div>
 
-        {/* Auto-play Toggle */}
+        {/* Auto-play Toggle 
         <button
           onClick={() => setIsAutoPlaying(!isAutoPlaying)}
           className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg transition-all duration-300 text-sm font-medium z-10"
         >
           {isAutoPlaying ? "Pause" : "Play"}
-        </button>
+        </button>*/}
       </div>
     </div>
     </>
