@@ -1,6 +1,6 @@
- {/* import heroImage from "/images/kjsea.jpg";
+ 
 import { Helmet } from "@dr.pogodin/react-helmet";
-
+{/* import heroImage from "/images/kjsea.jpg";
 const Hero: React.FC = () => {
   return (
     <>
@@ -82,6 +82,10 @@ const Kjseawishes: React.FC = () => {
   }, [currentIndex, isAutoPlaying]);
 
   return (
+    <>
+    <Helmet>
+      <title>Home | Pioneer Junior Academy</title>
+    </Helmet>
     <div className="relative w-full bg-white">
       <div
         className="relative w-full overflow-hidden"
@@ -157,6 +161,7 @@ const Kjseawishes: React.FC = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

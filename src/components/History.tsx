@@ -7,7 +7,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 // register modules
 
 
-// replace with your actual slide image paths
+
 const slides = [
   '/images/history1.webp',
   '/images/history2.webp',
