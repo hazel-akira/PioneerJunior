@@ -88,8 +88,8 @@ const Kjseawishes: React.FC = () => {
     </Helmet>
     <div className="relative w-full bg-white">
       <div
-        className="relative w-full overflow-hidden"
-        style={{ height: "800px" }}
+        className="relative w-full min-h-[100vh] overflow-hidden"
+       
       >
         {/* Image Slides */}
         {images.map((image, index) => (
