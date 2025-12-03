@@ -18,7 +18,7 @@ const accessItems = [
   },
   {
     title: 'Moodle Access',
-    url: 'https://elearning.pioneerschools.ac.ke',
+    url: 'https://elearning.pioneerjunioracademy.co.ke/',
     Icon: ComputerDesktopIcon,
   },
   {
