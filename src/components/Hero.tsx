@@ -5,10 +5,12 @@ const KJSEAwishes: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
+  
   const images = [
-   "/images/KJSEA.jpg",
-  "/images/KJSEA1.png",
-  ];
+    "/images/congrats3.webp",
+   "/images/congrats2.webp",
+   "/images/congrats1.webp",
+   ];
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -37,25 +39,26 @@ const KJSEAwishes: React.FC = () => {
 
   return (
     <div className="relative w-full bg-white">
+  <div
+  className="relative w-full overflow-hidden h-[800px] md:h-[800px] sm:h-[500px] xs:h-[380px]"
+>
+
+    {/* Image Slides */}
+    {images.map((image, index) => (
       <div
-        className="relative w-full overflow-hidden"
-        style={{ height: "800px" }}
+        key={index}
+        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
+          index === currentIndex ? "opacity-100" : "opacity-0"
+        }`}
       >
-        {/* Image Slides */}
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full object-contain"
-            />
-          </div>
-        ))}
+        <img
+          src={image}
+          alt={`Slide ${index + 1}`}
+          className="w-full h-full object-cover object-center"
+          loading="lazy"
+        />
+      </div>
+    ))}
 
         {/* Overlay gradient for readability */}
         <div className="absolute inset-0 bg-black/10 pointer-events-none" />

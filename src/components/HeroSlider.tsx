@@ -52,8 +52,8 @@ const Kjseawishes: React.FC = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const images = [
-   "/images/kjsea.jpg",
-  "/images/kjsea1.png",
+   "/images/congrat3.png",
+  "/images/congrats2.webp",
   ];
 
   const nextSlide = () => {
