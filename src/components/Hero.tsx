@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Kjseawishes: React.FC = () => {
+const KJSEAwishes: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const images = [
-   "/images/kjsea.jpg",
-  "/images/kjsea1.png",
+   "/images/KJSEA.jpg",
+  "/images/KJSEA1.png",
   ];
 
   const nextSlide = () => {
@@ -114,4 +114,4 @@ const Kjseawishes: React.FC = () => {
   );
 };
 
-export default Kjseawishes;
+export default KJSEAwishes;

@@ -256,36 +256,54 @@ const Navbar: React.FC = () => {
             </NavLink>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center text-sm font-bold whitespace-nowrap">
-              {/* Home with spacing before divider */}
-              <div className="flex px-3 py-2 items-center uppercase gap-3">
-                <NavLink to="/" className={({ isActive }) => (isActive ? "text-[white] underline" : "hover:text-white")}>
-                  Home
-                </NavLink>
-                <Divider />
-              </div>
+<nav className="hidden lg:flex items-center text-sm font-bold whitespace-nowrap">
+  {/* Home with spacing before divider */}
+  <div className="flex px-3 py-2 items-center uppercase gap-3">
+    <NavLink to="/" className={({ isActive }) => (isActive ? "text-[white] underline" : "hover:text-white")}>
+      Home
+    </NavLink>
+    <Divider />
+  </div>
 
-              {/* Think → Pathways → Boarding → Talent → Join Us → Fees */}
-              {ORDER.filter((k) => k !== "getAccess").map((k) => (
-                <DesktopMenuButton key={k} k={k} />
-              ))}
+  {/* Think → Pathways → Boarding → Talent → Join Us → Fees */}
+  {ORDER.filter((k) => k !== "getAccess").map((k, index) => (
+    <React.Fragment key={k}>
+      <DesktopMenuButton k={k} />
 
-              {/* Location (static) */}
-              <div className="flex items-center">
-                <NavLink
-                  to="/location"
-                  className={({ isActive }) =>
-                    `px-3 py-2 rounded-md hover:text-[#E4AF23] transition ${isActive ? "underline" : ""}`
-                  }
-                >
-                  Location
-                </NavLink>
-                <Divider />
-              </div>
+      {/* Insert KJSEA after the 2nd item (Think → Pathways → KJSEA) */}
+      {index === 1 && (
+        <div className="flex items-center">
+          <NavLink
+            to="/kjsea"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md hover:text-[#E4AF23] transition ${isActive ? "underline" : ""}`
+            }
+          >
+            KJSEA
+          </NavLink>
+          <Divider />
+        </div>
+      )}
+    </React.Fragment>
+  ))}
 
-              {/* Get Access last (no divider after) */}
-              <DesktopMenuButton k="getAccess" withDivider={false} />
-            </nav>
+  {/* Location (static) */}
+  <div className="flex items-center">
+    <NavLink
+      to="/location"
+      className={({ isActive }) =>
+        `px-3 py-2 rounded-md hover:text-[#E4AF23] transition ${isActive ? "underline" : ""}`
+      }
+    >
+      Location
+    </NavLink>
+    <Divider />
+  </div>
+
+  {/* Get Access last (no divider after) */}
+  <DesktopMenuButton k="getAccess" withDivider={false} />
+</nav>
+
 
             {/* Mobile toggle */}
             <button

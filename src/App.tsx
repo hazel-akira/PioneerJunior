@@ -37,7 +37,7 @@ import StaffAccess from './pages/StaffAccess'
 import InfoCard from './components/InfoCard'
 import PrivacyPolicyPage from './pages/PrivacyPolicy'
 import Disclaimer from './pages/Disclaimer';
-import PerformancePage from './pages/perfomance'
+import PerformancePage from './pages/kjsea'
 import NotFound from './pages/NotFound'
 import { Floating } from './components/Floating'
 import Grade7Fees from './components/grade7Fees'
@@ -168,7 +168,7 @@ export default function App() {
         />
         <Route path="/privacy" element={<PrivacyPolicyPage />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
-        <Route path="/perfomance" element={<PerformancePage/>}/>
+        <Route path="/KJSEA" element={<PerformancePage/>}/>
         <Route path='/sitemap' element={<Sitemap/>}/>
         {/* 404 Not Found route */}
         <Route path="*" element={<NotFound />} />
