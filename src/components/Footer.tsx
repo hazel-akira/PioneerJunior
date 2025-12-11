@@ -4,7 +4,7 @@ import {
   Users,
   GraduationCap,
   UserCheck,
- 
+ LineChart,
   Building2,
   UserPlus,
   DollarSign,
@@ -36,6 +36,7 @@ const Footer: React.FC = () => (
               { to: '/', icon: <Home size={14} />, label: 'Home' },
               { to: '/think', icon: <Users size={14} />, label: 'Think' },
               { to: '/pathways', icon: <GraduationCap size={14} />, label: 'Think Pathways' },
+              { to: '/kjsea', icon: <LineChart size={14} />, label: 'KJSEA' },
               { to: '/boarding-life', icon: <UserCheck size={14} />, label: 'Think Boarding' },
               { to: '/talent', icon: <Building2 size={14} />, label: ' Think Talent' }, 
               { to: '/join', icon: <UserPlus size={14} />, label: ' Join Us' }, 
