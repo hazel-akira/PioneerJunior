@@ -125,7 +125,7 @@ export default function BeInspired() {
       year: "2025",
       title: "Kenya Junior School Education Assessment (KJSEA) 2025",
       embedUrl:
-        "https://app.powerbi.com/view?r=eyJrIjoiOTg0OWYxZDAtMjYzNi00NWUyLTg2YjMtMmQzOiZjhjY2I1IiwidCI6ImJkNzIyMmM3LTBjZWYtNGJjNS05ZTllLWQ1ZjhiNWJiYjFlMiIsImMiOjl9&embedImagePlaceholder=true",
+        "https://app.fabric.microsoft.com/view?r=eyJrIjoiOWYzNWQ5YTUtOTNmZC00MzgyLTkzNDMtNjBlM2EyZTk3NTkxIiwidCI6ImJkNzIyMmM3LTBjZWYtNGJjNS05ZTllLWQ1ZjhiNWJiYjFlMiIsImMiOjl9",
       aspectRatio: "aspect-[16/10]",
       icon: <BarChart3 className="w-6 h-6" />,
     },
