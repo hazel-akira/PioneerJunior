@@ -21,7 +21,7 @@ type MenuKey =
   | "talent"
   | "joinUs"
   | "fees"
-  | "getAccess";
+
 
 /* ===================== MENU DATA ===================== */
 
@@ -100,15 +100,15 @@ const MENU: Record<MenuKey, MenuGroup> = {
     ],
   },
 
-  getAccess: {
-    label: "Get Access",
-    to: "/access",
-    items: [
-      { to: "/events", label: "Calendar of Events" },
-      { to: "/StuAccess", label: "Student Access" },
-      { to: "/staffAccess", label: "Staff Access" },
-    ],
-  },
+  ///getAccess: {
+   // label: "Get Access",
+   // to: "/access",
+   // items: [
+   //   { to: "/events", label: "Calendar of Events" },
+   //   { to: "/StuAccess", label: "Student Access" },
+   //   { to: "/staffAccess", label: "Staff Access" },
+  //  ],
+//  },
 };
 
 const ORDER: MenuKey[] = [
@@ -292,9 +292,9 @@ const Navbar: React.FC = () => {
 <NavLink to="/location" className="px-3 py-2">
   Location
 </NavLink>
-<Divider />
+{/*<Divider />
 
-{/* Get Access as dropdown */}
+ Get Access as dropdown 
 <div
   className="relative"
   onMouseEnter={() => openMenu("getAccess")}
@@ -313,7 +313,7 @@ const Navbar: React.FC = () => {
       <LinkItem key={it.label} item={it} onClick={closeAll} />
     ))}
   </Dropdown>
-</div>
+</div>*/}
         </nav>
 
         {/* MOBILE TOGGLE */}
