@@ -43,7 +43,7 @@ type MenuKey =
 
 const MENU: Record<MenuKey, MenuGroup> = {
   think: {
-    label: "Think",
+    label: "Think Pioneer",
     to: "/think",
     items: [
       { to: "/different", label: "Think Different" },
