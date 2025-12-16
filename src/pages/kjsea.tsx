@@ -129,46 +129,46 @@ export default function BeInspired() {
           title="KJSEA Performance Analytics"
           description="The first-ever nationwide KJSEA results are now available! Explore detailed performance analytics, trends, and score distributions right here on our website. Celebrate achievements and gain insights to guide future learning."
         />
-        
-                {/* ---------- SUBJECTS PERFORMANCE ---------- */}
-       <div className="bg-white rounded-xl shadow animate-fadeIn">
-            <button
-              onClick={() => setSubjectsOpen((prev) => !prev)}
-              className="w-full flex justify-between items-center p-4 text-left font-bold text-xl text-[#093057]"
-            >
-              Subjects Performance
-              <ChevronDown className={`transition-transform ${subjectsOpen ? "rotate-180" : ""}`} />
-            </button>
+        <div className="max-w-full mx-auto px-4 w-full space-y-4">
+  {/* ---------- SUBJECTS PERFORMANCE ---------- */}
+  <div className="bg-white rounded-xl shadow animate-fadeIn">
+    <button
+      onClick={() => setSubjectsOpen((prev) => !prev)}
+      className="w-full flex justify-between items-center p-3 text-left font-bold text-xl text-[#093057]"
+    >
+      Subjects Performance
+      <ChevronDown className={`transition-transform ${subjectsOpen ? "rotate-180" : ""}`} />
+    </button>
 
-            {subjectsOpen && (
-              <div className="p-5 border-t grid gap-5">
-                {subjectsDashboards.map((dashboard) => (
-                  <DashboardCard key={dashboard.id} dashboard={dashboard} />
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-        
-          {/* ---------- ACADEMY vs NATIONAL ---------- */}
-          <div className="bg-white rounded-xl shadow animate-fadeIn">
-            <button
-              onClick={() => setAcademyOpen((prev) => !prev)}
-              className="w-full flex justify-between items-center p-4 text-left font-bold text-xl text-[#093057]"
-            >
-              Pioneer Junior Academy vs National
-              <ChevronDown className={`transition-transform ${academyOpen ? "rotate-180" : ""}`} />
-            </button>
+    {subjectsOpen && (
+      <div className="p-4 border-t grid gap-4">
+        {subjectsDashboards.map((dashboard) => (
+          <DashboardCard key={dashboard.id} dashboard={dashboard} />
+        ))}
+      </div>
+    )}
+  </div>
 
-            {academyOpen && (
-              <div className="p-5 border-t grid gap-5">
-                {academyDashboards.map((dashboard) => (
-                  <DashboardCard key={dashboard.id} dashboard={dashboard} />
-                ))}
-              </div>
-            )}
-          </div>
+  {/* ---------- ACADEMY vs NATIONAL ---------- */}
+  <div className="bg-white rounded-xl shadow animate-fadeIn">
+    <button
+      onClick={() => setAcademyOpen((prev) => !prev)}
+      className="w-full flex justify-between items-center p-3 text-left font-bold text-xl text-[#093057]"
+    >
+      Pioneer Junior Academy vs National
+      <ChevronDown className={`transition-transform ${academyOpen ? "rotate-180" : ""}`} />
+    </button>
 
+    {academyOpen && (
+      <div className="p-4 border-t grid gap-4">
+        {academyDashboards.map((dashboard) => (
+          <DashboardCard key={dashboard.id} dashboard={dashboard} />
+        ))}
+      </div>
+    )}
+  </div>
+</div>
+</div>
           
   
     </>

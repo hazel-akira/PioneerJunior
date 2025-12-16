@@ -109,13 +109,13 @@ const KJSEAwishes: React.FC = () => {
           {isAutoPlaying ? "Pause" : "Play"}
         </button>
 
-        {/* CTA Button to KJSEA Page */}
-        <Link
-          to="/kjsea" // Change this to your actual route
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black hover:bg-[#df8811] text-white px-8 py-3 rounded-full shadow-lg text-lg font-semibold transition-all duration-300 z-10"
-        >
-          Our KJSEA Perfomance 
-        </Link>
+        {/* CTA Floating Button to KJSEA Page */}
+<Link
+  to="/kjsea" // Change to your route
+  className="fixed bottom-30 right-100px md:right-14 bg-black hover:bg-[#df8811] text-white px-4 py-2 rounded-full shadow-xl text-base font-semibold transition-all duration-300 z-30 flex items-center justify-center"
+>
+  Our KJSEA Performance
+</Link>
       </div>
   
   );
