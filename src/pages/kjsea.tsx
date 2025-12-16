@@ -123,9 +123,18 @@ export default function BeInspired() {
     {
       id: "KJSEA-2025",
       year: "2025",
-      title: "Kenya Junior School Education Assessment (KJSEA) 2025",
+      title: "PIONEER JUNIOR ACADEMY COMPARISON AGAINST NATIONAL  KJSEA 2025",
       embedUrl:
         "https://app.fabric.microsoft.com/view?r=eyJrIjoiOWYzNWQ5YTUtOTNmZC00MzgyLTkzNDMtNjBlM2EyZTk3NTkxIiwidCI6ImJkNzIyMmM3LTBjZWYtNGJjNS05ZTllLWQ1ZjhiNWJiYjFlMiIsImMiOjl9",
+      aspectRatio: "aspect-[16/10]",
+      icon: <BarChart3 className="w-6 h-6 uppercase" />,
+    },
+    {
+      id: "KJSEA-2025",
+      year: "2025",
+      title: "Kenya Junior School Education Assessment (KJSEA) 2025  SUBJECTS PERFOMANCE",
+      embedUrl:
+        "https://app.fabric.microsoft.com/view?r=eyJrIjoiZTNlYzUzMGQtYTNmOS00ZjE4LTg2MWItZDBlOWI5YWExMmUwIiwidCI6ImJkNzIyMmM3LTBjZWYtNGJjNS05ZTllLWQ1ZjhiNWJiYjFlMiIsImMiOjl9",
       aspectRatio: "aspect-[16/10]",
       icon: <BarChart3 className="w-6 h-6" />,
     },

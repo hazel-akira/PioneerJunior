@@ -183,13 +183,13 @@ const Dropdown = ({
   children: ReactNode;
 }) => (
   <div
-    className={`absolute left-0 top-full mt-2 w-64 rounded-xl bg-white shadow-lg transition ${
+    className={`absolute left-0 top-full text-sm mt-2 w-48 rounded-xl bg-white shadow-lg transition ${
       open
         ? "opacity-100 translate-y-0"
         : "opacity-0 -translate-y-1 pointer-events-none"
     }`}
   >
-    <div className="p-1 space-y-1">{children}</div>
+    <div className="p-1 text-sm space-y-1">{children}</div>
   </div>
 );
 
@@ -253,7 +253,7 @@ const Navbar: React.FC = () => {
         </NavLink>
 
         {/* DESKTOP */}
-        <nav className="hidden lg:flex items-center text-lg font-bold">
+        <nav className="hidden lg:flex items-center text-base font-bold">
           <NavLink to="/" className="px-3 py-2">
             Home
           </NavLink>
