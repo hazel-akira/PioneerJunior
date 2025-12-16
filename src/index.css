@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Force Sansita if Tailwind config isn't working */
 @layer base {
@@ -16,4 +13,14 @@ html, body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Add in your global CSS or Tailwind config */
+@keyframes slow-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 2s ease-in-out infinite;
 }
