@@ -52,7 +52,7 @@ const AdmissionsPolicy: React.FC = () => (
             <strong className='text-[#e4af23]'>Interview and Assessment</strong> – Shortlisted applicants may be invited for an interview and/or assessment to evaluate their academic readiness and suitability for our learning environment.
           </li>
           <li>
-            <strong className='text-[#e4af23]'>Admissions Decision</strong> – Admissions decisions will be based on a holistic review of the applicant's academic record, interview performance, and other relevant factors. Decisions will be made without regard to race, ethnicity, gender, religion, or socioeconomic background.
+            <strong className='text-[#e4af23]'>Admissions Decision</strong> – Admissions decisions will be based on a holistic review of the applicant's academic record, interviewkjseasubjects, and other relevant factors. Decisions will be made without regard to race, ethnicity, gender, religion, or socioeconomic background.
           </li>
         </ol>
       </main>

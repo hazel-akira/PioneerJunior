@@ -1,59 +1,15 @@
- 
-import { Helmet } from "@dr.pogodin/react-helmet";
-{/* import heroImage from "/images/kjsea.jpg";
-const Hero: React.FC = () => {
-  return (
-    <>
-      <Helmet>
-        <title>Home | Pioneer Junior Academy</title>
-      </Helmet>
-
-      <section
-        id="home"
-        className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-[#062747]"
-      >
-       Background image   object-[15%_60%]
-        <img
-          src={heroImage}
-          alt="Pioneer Junior Academy Campus"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="eager"
-          decoding="async"
-        />
-
-        {/* Overlay (optional — use lighter opacity for readability) 
-        <div className="absolute inset-0 " />
-
-        {/* Content 
-        <div className="relative z-10 w-full text-center px-4 md:px-8 py-24 md:py-32">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase text-white drop-shadow-lg">
-            THINK JUNIOR SECONDARY, THINK PIONEER
-          </h1>
-
-          <p className="mt-6 text-base md:text-lg text-white/90 max-w-3xl mx-auto">
-            We provide a nurturing, future-ready learning environment, grounded
-            in excellence and character for every learner.
-          </p>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default Hero;
-*/}
-
-
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link
 
-const Kjseawishes: React.FC = () => {
+const KJSEAwishes: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const images = [
-   "/images/congrat3.png",
-  "/images/congrats2.webp",
+    "/images/congrats3.png",
+    "/images/congrats2.webp",
+    //"/images/congrats1.webp",
   ];
 
   const nextSlide = () => {
@@ -70,7 +26,6 @@ const Kjseawishes: React.FC = () => {
     setCurrentIndex(index);
   };
 
-  // Auto-play functionality
   useEffect(() => {
     if (!isAutoPlaying) return;
 
@@ -82,32 +37,26 @@ const Kjseawishes: React.FC = () => {
   }, [currentIndex, isAutoPlaying]);
 
   return (
-    <>
-    <Helmet>
-      <title>Home | Pioneer Junior Academy</title>
-    </Helmet>
-    <div className="relative w-full bg-white">
-      <div
-        className="relative w-full min-h-[100vh] overflow-hidden"
-       
-      >
-        {/* Image Slides */}
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full object-contain"
-            />
-          </div>
-        ))}
+    <div className="relative w-full h-50px bg-white">
+      <div className="relative w-full overflow-hidden aspect-[16/9] md:aspect-[16/9] sm:aspect-[4/3] xs:aspect-[4/3]">
+  {images.map((image, index) => (
+    <div
+      key={index}
+      className={`absolute top-0 left-0 w-full h-100vh  transition-opacity duration-700 ${
+        index === currentIndex ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <img
+        src={image}
+        alt={`Slide ${index + 1}`}
+        className="w-full h-100vh object-cover object-center"
+        loading="lazy"
+      />
+    </div>
+  ))}
+    </div>  
 
-        {/* Overlay gradient for readability */}
+        {/* Overlay gradient */}
         <div className="absolute inset-0 bg-black/10 pointer-events-none" />
 
         {/* Prev / Next Buttons */}
@@ -134,7 +83,7 @@ const Kjseawishes: React.FC = () => {
         </button>
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-3 z-10">
           {images.map((_, index) => (
             <button
               key={index}
@@ -152,17 +101,24 @@ const Kjseawishes: React.FC = () => {
           ))}
         </div>
 
-        {/* Auto-play Toggle 
+        {/* Auto-play Toggle */}
         <button
           onClick={() => setIsAutoPlaying(!isAutoPlaying)}
           className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg transition-all duration-300 text-sm font-medium z-10"
         >
           {isAutoPlaying ? "Pause" : "Play"}
-        </button>*/}
+        </button>
+
+        {/* CTA Button to KJSEA Page */}
+        <Link
+          to="/kjsea" // Change this to your actual route
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black hover:bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg text-lg font-semibold transition-all duration-300 z-10"
+        >
+          View KJSEA Results
+        </Link>
       </div>
-    </div>
-    </>
+  
   );
 };
 
-export default Kjseawishes;
+export default KJSEAwishes;

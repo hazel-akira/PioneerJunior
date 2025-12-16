@@ -104,7 +104,7 @@ We use Your Personal data to provide and improve the Service. By using the Servi
               {[
                 "To provide and maintain our Service.",
                 "To manage your Account and registration.",
-                "For the performance of a contract for products, items or services you have purchased.",
+                "For thekjseasubjects of a contract for products, items or services you have purchased.",
                 "To contact you by email, telephone calls, SMS, or push notifications.",
                 "To provide you with news, special offers and general information about similar goods or services.",
                 "To manage your requests and customer support.",

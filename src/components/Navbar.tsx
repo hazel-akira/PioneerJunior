@@ -183,7 +183,7 @@ const Dropdown = ({
   children: ReactNode;
 }) => (
   <div
-    className={`absolute left-0 top-full text-sm mt-2 w-48 rounded-xl bg-white shadow-lg transition ${
+    className={`absolute left-0 top-full text-sm mt-1 px-0.5 w-37 rounded-xl bg-white shadow-lg transition ${
       open
         ? "opacity-100 translate-y-0"
         : "opacity-0 -translate-y-1 pointer-events-none"

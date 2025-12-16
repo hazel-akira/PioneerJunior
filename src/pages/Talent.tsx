@@ -33,7 +33,7 @@ const Talent: React.FC = () => (
     {/* Main Content */}
     <section className="container max-w-4xl mx-auto l px-4  py-16 space-y-8 text-gray-100">
     <p className="text-gray-100 text-4xl leading-relaxed">
-    We cultivate talent from within our student body and every performance undergoes meticulous rehearsals and artistic refinement before captivating our audience.</p>
+    We cultivate talent from within our student body and everykjseasubjects undergoes meticulous rehearsals and artistic refinement before captivating our audience.</p>
     
     
     

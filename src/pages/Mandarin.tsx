@@ -129,7 +129,7 @@ const ThinkMandarin: React.FC = () => {
           <FeatureCard title="Reading & Characters" desc="Pinyin, tones, stroke order, radicals, and high‑frequency characters." icon={<BookOpen className="h-5 w-5" aria-hidden/>} />
           <FeatureCard title="Digital Literacy" desc="Use IMEs/keyboard input, dictionaries, and learning apps for spaced practice." icon={<Keyboard className="h-5 w-5" aria-hidden/>} />
           <FeatureCard title="Culture & Exchange" desc="Festivals, food, traditions, and basic Chinese geography and customs." icon={<Globe className="h-5 w-5" aria-hidden/>} />
-          <FeatureCard title="Projects & Performances" desc="Dialogues, role‑plays, posters, calligraphy, and cultural showcases." icon={<Users className="h-5 w-5" aria-hidden/>} />
+          <FeatureCard title="Projects &kjseasubjectss" desc="Dialogues, role‑plays, posters, calligraphy, and cultural showcases." icon={<Users className="h-5 w-5" aria-hidden/>} />
           <FeatureCard title="Competitions & HSK" desc="Prep towards HSK 1–2; school/club contests and language days." icon={<Trophy className="h-5 w-5" aria-hidden/>} />
         </div>
       </section>

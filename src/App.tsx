@@ -36,7 +36,7 @@ import StudentAccess from './pages/StudentAccess'
 import StaffAccess from './pages/StaffAccess'
 import InfoCard from './components/InfoCard'
 import PrivacyPolicyPage from './pages/PrivacyPolicy'
-import Disclaimer from './pages/Disclaimer';
+import Disclaimer from './pages/Disclaimer'
 import PerformancePage from './pages/kjsea'
 import NotFound from './pages/NotFound'
 import { Floating } from './components/Floating'

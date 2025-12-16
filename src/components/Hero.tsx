@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const KJSEAwishes: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  
   const images = [
     "/images/congrats3.webp",
-   "/images/congrats2.webp",
-   "/images/congrats1.webp",
-   ];
+    "/images/congrats2.webp",
+    "/images/congrats1.webp",
+  ];
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -26,7 +26,6 @@ const KJSEAwishes: React.FC = () => {
     setCurrentIndex(index);
   };
 
-  // Auto-play functionality
   useEffect(() => {
     if (!isAutoPlaying) return;
 
@@ -39,29 +38,25 @@ const KJSEAwishes: React.FC = () => {
 
   return (
     <div className="relative w-full bg-white">
-  <div
-  className="relative w-full overflow-hidden h-[800px] md:h-[800px] sm:h-[500px] xs:h-[380px]"
->
+      <div className="relative w-full overflow-hidden h-[800px] md:h-[800px] sm:h-[500px] xs:h-[380px]">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full object-cover object-center"
+              loading="lazy"
+            />
+          </div>
+        ))}
 
-    {/* Image Slides */}
-    {images.map((image, index) => (
-      <div
-        key={index}
-        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
-          index === currentIndex ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <img
-          src={image}
-          alt={`Slide ${index + 1}`}
-          className="w-full h-full object-cover object-center"
-          loading="lazy"
-        />
-      </div>
-    ))}
-
-        {/* Overlay gradient for readability */}
-        <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none z-10" />
 
         {/* Prev / Next Buttons */}
         <button
@@ -69,7 +64,7 @@ const KJSEAwishes: React.FC = () => {
             prevSlide();
             setIsAutoPlaying(false);
           }}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-20"
           aria-label="Previous slide"
         >
           <ChevronLeft size={28} />
@@ -80,14 +75,14 @@ const KJSEAwishes: React.FC = () => {
             nextSlide();
             setIsAutoPlaying(false);
           }}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-20"
           aria-label="Next slide"
         >
           <ChevronRight size={28} />
         </button>
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+        <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex gap-3 z-20">
           {images.map((_, index) => (
             <button
               key={index}
@@ -108,10 +103,18 @@ const KJSEAwishes: React.FC = () => {
         {/* Auto-play Toggle */}
         <button
           onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-          className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg transition-all duration-300 text-sm font-medium z-10"
+          className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg transition-all duration-300 text-sm font-medium z-20"
         >
           {isAutoPlaying ? "Pause" : "Play"}
         </button>
+
+        {/* CTA Button to KJSEA Page */}
+        <Link
+          to="/kjsea"
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg text-lg font-semibold transition-all duration-300"
+        >
+          View KJSEA Results
+        </Link>
       </div>
     </div>
   );
