@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import {
   ChevronDownIcon,
@@ -129,7 +129,7 @@ const DropdownItem = ({
   isLast: boolean;
 }) => {
   const base =
-    "block px-4 py-2 text-sm hover:bg-black hover:text-white transition";
+    "block px-5 py-2 text-sm hover:bg-black hover:text-white transition";
 
   return (
     <>
@@ -147,8 +147,7 @@ const DropdownItem = ({
           {item.label}
         </NavLink>
       )}
-
-      {!isLast && <div className="border-b border-gray-200 mx-2" />}
+      {!isLast && <div className="border-b border-gray-200 mx-4" />}
     </>
   );
 };
@@ -160,10 +159,22 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileKey, setMobileKey] = useState<MenuKey | null>(null);
 
+  const closeTimer = useRef<number | null>(null);
+
+  const openDesktopMenu = (key: MenuKey) => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    setOpenKey(key);
+  };
+
+  const closeDesktopMenu = () => {
+    closeTimer.current = window.setTimeout(() => {
+      setOpenKey(null);
+    }, 450);
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-[#0f1b2b] text-white">
       <div className="max-w-8xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* LOGO */}
         <NavLink to="/" className="text-2xl font-bold">
           Pioneer Junior Academy
         </NavLink>
@@ -196,8 +207,8 @@ const Navbar: React.FC = () => {
               <div
                 key={key}
                 className="relative px-3"
-                onMouseEnter={() => setOpenKey(key)}
-                onMouseLeave={() => setOpenKey(null)}
+                onMouseEnter={() => openDesktopMenu(key)}
+                onMouseLeave={closeDesktopMenu}
               >
                 <NavLink
                   to={MENU[key].to}
@@ -209,7 +220,7 @@ const Navbar: React.FC = () => {
 
                 {openKey === key && (
                   <div className="absolute top-full left-0 mt-3 bg-white text-black rounded-xl shadow-xl
-                                  min-w-[240px] max-h-[420px] overflow-y-auto py-2">
+                                  min-w-[260px] max-h-[420px] overflow-y-auto py-2">
                     {MENU[key].items.map((it, idx) => (
                       <DropdownItem
                         key={it.label}
@@ -245,7 +256,7 @@ const Navbar: React.FC = () => {
       <div
         className={`fixed top-0 right-0 h-full w-80 bg-[#0f1b2b] z-50 transform transition-transform ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        } overflow-y-auto`}
       >
         <div className="flex justify-between p-5 border-b border-white/20">
           <span className="font-bold">Menu</span>
@@ -255,49 +266,68 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="p-4 space-y-2">
-          <NavLink to="/" className="block px-3 py-2">
-            Home
-          </NavLink>
+       
 
-          {Object.entries(MENU).map(([key, group]) => {
-            const k = key as MenuKey;
-            const open = mobileKey === k;
+          
 
-            return (
-              <div key={k}>
-                <button
-                  onClick={() => setMobileKey(open ? null : k)}
-                  className="w-full flex justify-between px-3 py-2 hover:bg-white/10"
-                >
-                  {group.label}
-                  <ChevronDownIcon
-                    className={`w-4 h-4 transition ${
-                      open ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+          {DESKTOP_ORDER.map((key) => {
+  if (key === "home")
+    return (
+      <NavLink key="home" to="/" className="block px-3 py-2">
+        Home
+      </NavLink>
+    );
 
-                {open && (
-                  <div className="pl-3 py-2 space-y-1 border-l border-white/20">
-                    {group.items.map((it) => (
-                      <NavLink
-                        key={it.label}
-                        to={it.to}
-                        className="block px-3 py-2 text-sm hover:bg-white/10"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {it.label}
-                      </NavLink>
-                    ))}
-                  </div>
-                )}
-              </div>
-            );
-          })}
+  if (key === "kjsea")
+    return (
+      <NavLink key="kjsea" to="/kjsea" className="block px-3 py-2">
+        KJSEA
+      </NavLink>
+    );
 
-          <NavLink to="/location" className="block px-3 py-2">
-            Location
-          </NavLink>
+  if (key === "location")
+    return (
+      <NavLink key="location" to="/location" className="block px-3 py-2">
+        Location
+      </NavLink>
+    );
+
+  const group = MENU[key];
+
+  return (
+    <div key={key}>
+      <button
+        onClick={() => setMobileKey(mobileKey === key ? null : key)}
+        className="w-full flex justify-between px-3 py-2 hover:bg-white/10"
+      >
+        {group.label}
+        <ChevronDownIcon
+          className={`w-4 h-4 transition ${
+            mobileKey === key ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      {mobileKey === key && (
+        <div className="pl-4 py-2 space-y-1 border-l border-white/20">
+          {group.items.map((it) => (
+            <NavLink
+              key={it.label}
+              to={it.to}
+              className="block px-3 py-2 text-sm hover:bg-white/10"
+              onClick={() => setMobileOpen(false)}
+            >
+              {it.label}
+            </NavLink>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+})}
+
+
+          
         </div>
       </div>
     </header>
