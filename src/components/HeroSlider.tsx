@@ -112,9 +112,9 @@ const KJSEAwishes: React.FC = () => {
         {/* CTA Button to KJSEA Page */}
         <Link
           to="/kjsea" // Change this to your actual route
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black hover:bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg text-lg font-semibold transition-all duration-300 z-10"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black hover:bg-[#df8811] text-white px-8 py-3 rounded-full shadow-lg text-lg font-semibold transition-all duration-300 z-10"
         >
-          View KJSEA Results
+          Our KJSEA Perfomance 
         </Link>
       </div>
   

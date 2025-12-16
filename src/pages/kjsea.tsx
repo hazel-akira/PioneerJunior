@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BarChart3, Award, Calendar, ChevronDown } from "lucide-react";
 import { Helmet } from '@dr.pogodin/react-helmet';
+//import { div } from "framer-motion/client";
 
 // ---------------- HERO SECTION ---------------- //
 interface HeroSectionProps {
@@ -117,6 +118,7 @@ export default function BeInspired() {
 
 
   return (
+    <div className="w-full min-h-screen bg-gray-100 pb-20">
     <>
       <Helmet>
         <title>KJSEA | Pioneer Junior Academy</title>
@@ -127,18 +129,19 @@ export default function BeInspired() {
           title="KJSEA Performance Analytics"
           description="The first-ever nationwide KJSEA results are now available! Explore detailed performance analytics, trends, and score distributions right here on our website. Celebrate achievements and gain insights to guide future learning."
         />
-{/* ---------- SUBJECTS PERFORMANCE ---------- */}
-<div className="bg-white rounded-xl shadow animate-fadeIn">
+        
+                {/* ---------- SUBJECTS PERFORMANCE ---------- */}
+       <div className="bg-white rounded-xl shadow animate-fadeIn">
             <button
               onClick={() => setSubjectsOpen((prev) => !prev)}
-              className="w-full flex justify-between items-center p-5 text-left font-bold text-xl text-[#093057]"
+              className="w-full flex justify-between items-center p-4 text-left font-bold text-xl text-[#093057]"
             >
               Subjects Performance
               <ChevronDown className={`transition-transform ${subjectsOpen ? "rotate-180" : ""}`} />
             </button>
 
             {subjectsOpen && (
-              <div className="p-5 border-t grid gap-6">
+              <div className="p-5 border-t grid gap-5">
                 {subjectsDashboards.map((dashboard) => (
                   <DashboardCard key={dashboard.id} dashboard={dashboard} />
                 ))}
@@ -146,19 +149,19 @@ export default function BeInspired() {
             )}
           </div>
         </div>
-        <div className="max-w-full mx-auto px-4 w-full space-y-6">
+        
           {/* ---------- ACADEMY vs NATIONAL ---------- */}
           <div className="bg-white rounded-xl shadow animate-fadeIn">
             <button
               onClick={() => setAcademyOpen((prev) => !prev)}
-              className="w-full flex justify-between items-center p-5 text-left font-bold text-xl text-[#093057]"
+              className="w-full flex justify-between items-center p-4 text-left font-bold text-xl text-[#093057]"
             >
               Pioneer Junior Academy vs National
               <ChevronDown className={`transition-transform ${academyOpen ? "rotate-180" : ""}`} />
             </button>
 
             {academyOpen && (
-              <div className="p-5 border-t grid gap-6">
+              <div className="p-5 border-t grid gap-5">
                 {academyDashboards.map((dashboard) => (
                   <DashboardCard key={dashboard.id} dashboard={dashboard} />
                 ))}
@@ -167,8 +170,9 @@ export default function BeInspired() {
           </div>
 
           
-      </div>
+  
     </>
+    </div>
   );
 }
 
