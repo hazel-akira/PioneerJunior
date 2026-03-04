@@ -14,7 +14,7 @@ const HeroSlider: React.FC = () => {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:90px_90px] opacity-10" />
 
         <div className="relative mx-auto flex min-h-[100vh] w-90% max-w-8xl flex-col items-center gap-12 px-6 py-20 md:px-5 lg:flex-row lg:items-stretch lg:gap-5 lg:py-12">
-          <div className="w-full max-w-xl px-6 text-white lg:w-1/2">
+          <div className="w-full max-w-7xl px-12 py-12 lg:px-12 text-center text-white lg:w-1/2">
           
             <h1 className="mt-6 text-xl  font-semibold leading-tight md:text-6xl">
             Your journey to elite football starts at PioneerxSD Huesca Football Academy.
@@ -24,7 +24,7 @@ const HeroSlider: React.FC = () => {
             The PioneerxSD Huesca launches a new world-class Football Development Academy
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex py-12 px-12 text-center flex-wrap items-center gap-4">
               <Link
                 to="https://football-academy.pioneergroupofschools.co.ke/main/register"
                 className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-[#0f0f21] transition hover:bg-white/90"
