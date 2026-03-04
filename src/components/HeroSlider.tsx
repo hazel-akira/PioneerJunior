@@ -42,13 +42,17 @@ const HeroSlider: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative w-full lg:w-1/2 lg:self-stretch">
-            <div className="pointer-events-none absolute inset-0 px-8 rounded-[2rem] bg-purple-500/25 blur-3xl" />
+          <div className="relative w-full overflow-hidden lg:w-1/2 lg:self-stretch">
+          
             <img
               src="/images/footballAcademy.webp"
               alt="Pioneer School students in action"
-              className="relative h-full min-h-[480px] w-full rounded-[2rem] border border-white/15 bg-black/80 object-cover shadow-[0_0_80px_#13365f] lg:min-h-0"
+              className="relative h-full min-h-[480px] w-full  rounded-[2rem] object-cover lg:min-h-0"
             />
+            <div className="pointer-events-none absolute inset-y-0 rounded-[2rem] left-0 w-24 bg-gradient-to-r from-[#0f1b2b] via-[#0f1b2b]/70 to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0  rounded-[2rem] right-0 w-16 bg-gradient-to-l from-[#0f1b2b]/80 to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0  rounded-[2rem]top-0 h-16 bg-gradient-to-b from-[#0f1b2b]/70 to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0 rounded-[2rem] bottom-0 h-16 bg-gradient-to-t from-[#0f1b2b]/70 to-transparent" />
 
 <a
   href="/kjsea"
