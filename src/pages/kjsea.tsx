@@ -17,7 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description }) => (
         <span className="text-blue-100 font-medium">Our Educational Excellence</span>
       </div>
 
-      <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-bl from-[#df8811] via-yellow-400 to-[#df8811] bg-clip-text text-transparent text-center drop-shadow mb-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[1.15] font-extrabold bg-gradient-to-bl from-[#df8811] via-yellow-400 to-[#df8811] bg-clip-text text-transparent text-center mb-4">
         {title}
       </h1>
 
@@ -74,6 +74,7 @@ const DashboardCard: React.FC<DashboardCardProps> = ({ dashboard }) => {
 
       <iframe
         src={dashboard.embedUrl}
+        title={`${dashboard.title} dashboard`}
         className={`w-full ${loading || error ? "hidden" : "block"} ${dashboard.aspectRatio} border-0`}
         onLoad={() => setLoading(false)}
         onError={() => {
@@ -185,7 +186,7 @@ export default function BeInspired() {
 
 <div className="w-full px-4 max-w-full mx-auto">
   {/* kjseasubjects Accordion 
-</div>*/}
+</div>*
 
         
 
