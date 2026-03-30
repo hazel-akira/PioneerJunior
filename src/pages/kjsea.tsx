@@ -68,7 +68,7 @@ const DashboardCard: React.FC<DashboardCardProps> = ({ dashboard }) => {
 
       {error && (
         <div className="p-6 text-center bg-red-50 text-red-600">
-          <p>Error loading dashboard</p>
+          <p>Error loading the dashboard</p>
         </div>
       )}
 
