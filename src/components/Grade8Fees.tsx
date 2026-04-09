@@ -86,7 +86,7 @@ export default function Grade8Fees() {
  
   const oneOffCharges = [
     { title: "Non-refundable Commitment Fee", amount: "KES 20,000" },
-    { title: "Extra charge for uniform, bedding and textbooks", amount: "KES 100,000" },
+    { title: "Extra charge for uniform, bedding and textbooks", amount: "KES 30,000" },
     { title: "Free transport to and from Nyanyuki, Mombasa, and Embu", isFree: true }
   ];
  
