@@ -80,9 +80,9 @@ const PaymentMethodCard: React.FC<{ method: string; accepted: boolean }> = ({ me
  
 export default function grade6Fees() {
   const termFees = [
-    { term: "TERM 1", amount: "KES 105,200" },
-    { term: "TERM 2", amount: "KES 105,200" },
-    { term: "TERM 3", amount: "KES 105,200" }
+    { term: "TERM 1", amount: "KES 120,000" },
+    { term: "TERM 2", amount: "KES 120,000" },
+    { term: "TERM 3", amount: "KES 120,000" }
   ];
  
   const oneOffCharges = [
@@ -136,7 +136,7 @@ export default function grade6Fees() {
             ))}
             <TermFeeCard
               term="ANNUAL TOTAL"
-              amount="KES 315,600"
+              amount="KES 360,000"
               isAnnual={true}
             />
           </div>
